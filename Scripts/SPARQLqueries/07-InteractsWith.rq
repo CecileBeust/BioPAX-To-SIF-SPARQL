@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?participant1Ref abstraction:InteractsWith ?participant2Ref
+}
+WHERE {
+  VALUES ?participantType { bp3:Protein bp3:SmallMolecule }
+  # Core molecular interaction pattern
+  ?MolecularInteraction rdf:type/(rdfs:subClassOf*) bp3:MolecularInteraction .
+  ?MolecularInteraction bp3:participant ?participant1 .
+  ?participant1 rdf:type ?participantType .
+  ?MolecularInteraction bp3:participant ?participant2 .
+  ?participant2 rdf:type ?participantType . 
+
+  ?participant1 bp3:entityReference ?participant1Ref .
+  ?participant1Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  ?participant2 bp3:entityReference ?participant2Ref .
+  ?participant2Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  
+  FILTER (STR(?participant1Ref) < STR(?participant2Ref))
+}

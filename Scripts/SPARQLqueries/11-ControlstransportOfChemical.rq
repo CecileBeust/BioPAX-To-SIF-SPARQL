@@ -1,0 +1,42 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?enzymeRef abstraction:ControlsTransportOfChemical ?SmallMoleculeRef
+}
+WHERE {
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?reaction bp3:left ?SmallMolecule1 .
+  ?SmallMolecule1 rdf:type bp3:SmallMolecule .
+  ?SmallMolecule1 bp3:cellularLocation ?cellularLocVocab1 .
+  ?cellularLocVocab1 bp3:term ?location1 .
+  ?SmallMolecule1 bp3:entityReference ?SmallMoleculeRef .
+  
+  ?reaction bp3:right ?SmallMolecule2 . 
+  ?SmallMolecule2 rdf:type bp3:SmallMolecule .
+  ?SmallMolecule2  bp3:cellularLocation ?cellularLocVocab2 .
+  ?cellularLocVocab2 bp3:term ?location2 .
+  ?SmallMolecule2 bp3:entityReference ?SmallMoleculeRef .
+
+  ?SmallMoleculeRef rdf:type bp3:SmallMoleculeReference .
+
+  ?catalysis bp3:controlled ?reaction .
+  ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
+  ?catalysis bp3:controller ?enzyme .
+  ?enzyme rdf:type bp3:Protein .
+  ?enzyme bp3:entityReference ?enzymeRef .
+  ?enzymeRef rdf:type bp3:ProteinReference .
+
+  FILTER(?location1 != ?location2)
+}

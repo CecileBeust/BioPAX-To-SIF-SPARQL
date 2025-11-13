@@ -1,0 +1,63 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?chemicalCatalyzerRef abstraction:ChemicalAffects ?proteinRef .
+}
+WHERE {
+
+  OPTIONAL {
+    ?complex rdf:type bp3:Complex .
+    ?complex bp3:component ?proteinComponent .
+    ?proteinComponent rdf:type bp3:Protein .
+    # complete modification check 
+    ?proteinComponent bp3:feature ?feature .
+    ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
+    ?complex bp3:component ?chemicalCatalyzer .
+    ?chemicalCatalyzer rdf:type bp3:SmallMolecule .
+    ?chemicalCatalyzer bp3:entityReference ?chemicalCatalyzerRef .
+    ?chemicalCatalyzerRef rdf:type bp3:SmallMoleculeReference .
+
+    BIND(?proteinComponent AS ?protein1)
+  }
+
+  OPTIONAL {
+    ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+    ?reaction bp3:left ?protLeft .
+    ?protLeft rdf:type bp3:Protein .
+    ?protLeft bp3:entityReference ?protRef .
+
+    ?reaction bp3:right ?protRight .
+    ?protRight rdf:type bp3:Protein .
+    ?protRight bp3:entityReference ?protRef .
+
+    ?protRef rdf:type bp3:ProteinReference . 
+
+    ?catalysis bp3:controlled ?reaction .
+    ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
+    ?catalysis bp3:controller ?chemicalCatalyzer .
+    ?chemicalCatalyzer rdf:type bp3:SmallMolecule .
+    ?chemicalCatalyzer bp3:entityReference ?chemicalCatalyzerRef .
+    ?chemicalCatalyzerRef rdf:type bp3:SmallMoleculeReference .
+
+    # complete modification check 
+    ?protRight bp3:feature ?feature .
+    ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
+
+    BIND(?protLeft AS ?protein2)
+  }
+  BIND( COALESCE(?protein1, ?protein2) AS ?protein )
+  ?protein bp3:entityReference ?proteinRef .
+  ?proteinRef rdf:type bp3:ProteinReference .
+}
