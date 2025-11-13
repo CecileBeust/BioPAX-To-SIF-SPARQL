@@ -19,11 +19,10 @@ WHERE {
   # Case 1: Complex with several different proteins
   {
 	?complex rdf:type/(rdfs:subClassOf*) bp3:Complex .
-	?complex bp3:component* ?prot1 .
-	?complex bp3:component* ?prot2 .
+	?complex bp3:component ?prot1 .
+	?complex bp3:component ?prot2 .
 	?prot1 rdf:type bp3:Protein .
 	?prot2 rdf:type bp3:Protein .
-    
     
 	# Avoid self-pairing and duplicate pairs
 	FILTER (STR(?prot1) < STR(?prot2))
@@ -39,8 +38,7 @@ WHERE {
 	?stoich bp3:physicalEntity ?entity1 .
 	?stoich bp3:stoichiometricCoefficient ?coeff .
 	FILTER (?coeff > 1)
-    
-    ?entity1 bp3:component ?prot1 .
+    ?complex bp3:component ?prot1 .
 	?prot1 rdf:type bp3:Protein .
     
 	# For self-pairing, use the same entity

@@ -17,7 +17,6 @@ CONSTRUCT {
 }
 WHERE {
   ?reaction1 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-  
   ?catalysis1 bp3:controlled ?reaction1 .
   ?catalysis1 (rdf:type/rdfs:subClassOf*) bp3:Control .
   ?catalysis1 bp3:controller ?enzymeA .
@@ -30,7 +29,6 @@ WHERE {
   ?connectingMolecule rdf:type bp3:SmallMolecule .
   
   ?reaction2 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-  
   ?catalysis2 bp3:controlled ?reaction2 .
   ?catalysis2 (rdf:type/rdfs:subClassOf*) bp3:Control .
   ?catalysis2 bp3:controller ?enzymeB .

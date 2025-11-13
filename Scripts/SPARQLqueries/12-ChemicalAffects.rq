@@ -16,8 +16,8 @@ CONSTRUCT {
   ?chemicalCatalyzerRef abstraction:ChemicalAffects ?proteinRef .
 }
 WHERE {
-
-  OPTIONAL {
+  # the small molecule has an effect on the protein state through binding
+  {
     ?complex rdf:type bp3:Complex .
     ?complex bp3:component ?proteinComponent .
     ?proteinComponent rdf:type bp3:Protein .
@@ -31,8 +31,11 @@ WHERE {
 
     BIND(?proteinComponent AS ?protein1)
   }
+  
+  UNION
 
-  OPTIONAL {
+  # the small molecule has an effect on the protein state by controlling a Conversion reaction
+  {
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
     ?reaction bp3:left ?protLeft .
     ?protLeft rdf:type bp3:Protein .

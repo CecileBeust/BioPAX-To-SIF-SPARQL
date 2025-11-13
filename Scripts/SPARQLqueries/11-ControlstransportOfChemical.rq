@@ -20,13 +20,11 @@ WHERE {
   ?reaction bp3:left ?SmallMolecule1 .
   ?SmallMolecule1 rdf:type bp3:SmallMolecule .
   ?SmallMolecule1 bp3:cellularLocation ?cellularLocVocab1 .
-  ?cellularLocVocab1 bp3:term ?location1 .
   ?SmallMolecule1 bp3:entityReference ?SmallMoleculeRef .
   
   ?reaction bp3:right ?SmallMolecule2 . 
   ?SmallMolecule2 rdf:type bp3:SmallMolecule .
   ?SmallMolecule2  bp3:cellularLocation ?cellularLocVocab2 .
-  ?cellularLocVocab2 bp3:term ?location2 .
   ?SmallMolecule2 bp3:entityReference ?SmallMoleculeRef .
 
   ?SmallMoleculeRef rdf:type bp3:SmallMoleculeReference .
@@ -38,5 +36,5 @@ WHERE {
   ?enzyme bp3:entityReference ?enzymeRef .
   ?enzymeRef rdf:type bp3:ProteinReference .
 
-  FILTER(?location1 != ?location2)
+  FILTER(?cellularLocVocab1 != ?cellularLocVocab2)
 }

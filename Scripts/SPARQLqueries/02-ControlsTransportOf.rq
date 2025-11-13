@@ -39,7 +39,8 @@ WHERE {
   ?enzyme bp3:entityReference ?enzymeRef .
   ?enzymeRef rdf:type bp3:ProteinReference .
 
-  # Ensure cellular locations of protein 1 and protein 2 are different + ensure that they have the same reference
+  # Ensure cellular locations of protein 1 and protein 2 are different 
   FILTER (?cellularLocVocab1 != ?cellularLocVocab2)
+  # Ensure the enzyme is not the transported protein
   FILTER (?enzymeRef != ?protRef)
 }

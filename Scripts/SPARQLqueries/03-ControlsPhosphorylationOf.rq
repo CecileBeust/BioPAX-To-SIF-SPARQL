@@ -35,7 +35,7 @@ WHERE {
 
   ?protRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
-  # Complete phosphorylation check
+  # Specify that ?protRight is phosphorylated
   ?protRight bp3:feature ?feature .
   ?feature rdf:type bp3:ModificationFeature .
   ?feature bp3:modificationType ?modificationType .

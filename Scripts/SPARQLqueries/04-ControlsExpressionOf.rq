@@ -16,26 +16,37 @@ CONSTRUCT {
   ?enzymeRef abstraction:ControlsExpressionOf ?productRef
 }
 WHERE { 
-  OPTIONAL {
+# Case where the reaction is a Conversion
+  {
+    ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+    ?reaction bp3:right ?product .
+    ?product rdf:type bp3:Protein .
+    ?reaction bp3:displayName ?reactionName .
+    ?catalysis bp3:controlled ?reaction .
+    ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type bp3:ProteinReference .
+    ?catalysis bp3:controller ?enzyme .
+    ?enzyme rdf:type bp3:Protein .
+    ?enzyme bp3:entityReference ?enzymeRef .
+    ?enzymeRef rdf:type bp3:ProteinReference .
+    FILTER(CONTAINS(LCASE(?reactionName), "expression"))
+  }
+
+  UNION
+
+  # Case where the reaction is a TemplateReaction
+  {
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:TemplateReaction .
     ?reaction bp3:product ?product .
     ?product rdf:type bp3:Protein .
     ?catalysis bp3:controlled ?reaction .
     ?catalysis rdf:type bp3:TemplateReactionRegulation .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type bp3:ProteinReference .
+    ?catalysis bp3:controller ?enzyme .
+    ?enzyme rdf:type bp3:Protein .
+    ?enzyme bp3:entityReference ?enzymeRef .
+    ?enzymeRef rdf:type bp3:ProteinReference .
   }
-  
-  OPTIONAL {
-    ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-    ?reaction bp3:right ?product .
-    ?product rdf:type bp3:Protein .
-    ?catalysis bp3:controlled ?reaction .
-    ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
-  }
-
-  ?product bp3:entityReference ?productRef .
-  ?productRef rdf:type bp3:ProteinReference .
-  ?catalysis bp3:controller ?enzyme .
-  ?enzyme rdf:type bp3:Protein .
-  ?enzyme bp3:entityReference ?enzymeRef .
-  ?enzymeRef rdf:type bp3:ProteinReference .
 }

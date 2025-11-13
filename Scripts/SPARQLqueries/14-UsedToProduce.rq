@@ -12,14 +12,19 @@ PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
 PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
-SELECT ?smallMolecule1 ?smallMolecule2
+CONSTRUCT {
+  ?smallMolecule1Ref abstraction:UsedToProduce ?smallMolecule2Ref .
+}
 WHERE {
-  ?smallMolecule1 rdf:type bp3:SmallMolecule .
-  ?smallMolecule2 rdf:type bp3:SmallMolecule .
- 
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
   ?reaction bp3:left ?smallMolecule1 .
   ?reaction bp3:right ?smallMolecule2 .
-  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?smallMolecule1 rdf:type bp3:SmallMolecule .
+  ?smallMolecule1 bp3:entityReference ?smallMolecule1Ref .
+  ?smallMolecule1Ref rdf:type bp3:SmallMoleculeReference .
+  ?smallMolecule2 rdf:type bp3:SmallMolecule .
+  ?smallMolecule2 bp3:entityReference ?smallMolecule2Ref .
+  ?smallmolecule2Ref rdf:type bp3:SmallMoleculeReference .
  
-  FILTER (?smallMolecule1 != ?smallMolecule2)
+  FILTER (?smallMolecule1Ref != ?smallMolecule2Ref) 
 }
