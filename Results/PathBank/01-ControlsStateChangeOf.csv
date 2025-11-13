@@ -1,5 +1,5 @@
 Source,Interaction,Target
-http://smpdb.ca/pathways/#ProteinReference/19455,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/19459
 http://smpdb.ca/pathways/#ProteinReference/1424,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/1783
-http://smpdb.ca/pathways/#ProteinReference/19458,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/19460
+http://smpdb.ca/pathways/#ProteinReference/19455,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/19459
 http://smpdb.ca/pathways/#ProteinReference/19454,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/19461
+http://smpdb.ca/pathways/#ProteinReference/19458,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#ProteinReference/19460
