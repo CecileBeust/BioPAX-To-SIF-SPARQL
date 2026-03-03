@@ -9,9 +9,9 @@ We identified three meanings of description of SIF abstraction rules:
 
 For each meaning of description, we implemented a SPARQL query for each one of the 14 SIF rules.
 These queries can be found in the following folders: 
-- `Scripts/Meaning1-SIFAbstraction/SPARQLQueries`
-- `Scripts/Meaning2-SIFAbstraction/SPARQLQueries`
-- `Scripts/Meaning3-SIFAbstraction/SPARQLQueries`
+- `Scripts/Meaning1-SIFAbstraction/Meaning1-SPARQLQueries`
+- `Scripts/Meaning2-SIFAbstraction/Meaning2-SPARQLQueries`
+- `Scripts/Meaning3-SIFAbstraction/Meaning3-SPARQLQueries`
 
 In the `Scripts` folder, we also provide Jupyter notebboks that execute the SPARQL queries on the BioPAX exports of Reactome (version 95, December 2025) and PathBank (PathwayCommons, last updated 2019) for the three meanings of description:
 
