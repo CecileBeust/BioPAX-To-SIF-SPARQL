@@ -1,0 +1,16 @@
+SPARQL queries,Number of nodes,Number of edges
+controls-state-change-of,0,0
+controls-transport-of ,83,55
+controls-phosphorylation-of ,262,191
+controls-expression-of,270,275
+catalysis-precedes ,1170,33052
+in-complex-with,9897,26059
+interacts-with ,0,0
+neighbor-of ,5862,13909
+consumption-controled-by ,2477,2818
+controls-production,2588,2946
+controls-transport-of-chemical ,449,424
+chemical-affects ,0,0
+reacts-with ,1664,5026
+used-to-produce ,2883,7945
+TOTAL,16717,92700
