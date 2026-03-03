@@ -9,7 +9,7 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
@@ -21,20 +21,17 @@ WHERE {
   ?SmallMolecule1 rdf:type bp3:SmallMolecule .
   ?SmallMolecule1 bp3:cellularLocation ?cellularLocVocab1 .
   ?SmallMolecule1 bp3:entityReference ?SmallMoleculeRef .
-  
   ?reaction bp3:right ?SmallMolecule2 . 
   ?SmallMolecule2 rdf:type bp3:SmallMolecule .
   ?SmallMolecule2  bp3:cellularLocation ?cellularLocVocab2 .
   ?SmallMolecule2 bp3:entityReference ?SmallMoleculeRef .
-
-  ?SmallMoleculeRef rdf:type bp3:SmallMoleculeReference .
+  ?SmallMoleculeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
   ?catalysis bp3:controlled ?reaction .
   ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
   ?catalysis bp3:controller ?enzyme .
   ?enzyme rdf:type bp3:Protein .
   ?enzyme bp3:entityReference ?enzymeRef .
-  ?enzymeRef rdf:type bp3:ProteinReference .
-
+  ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
   FILTER(?cellularLocVocab1 != ?cellularLocVocab2)
 }

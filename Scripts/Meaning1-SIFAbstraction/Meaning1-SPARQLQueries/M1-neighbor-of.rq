@@ -9,23 +9,18 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?enzymeRef abstraction:ControlsProductionOf ?productRef
+   ?prot1 abstraction:NeighborOf ?prot2
 }
 WHERE {
-  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-  ?reaction bp3:left ?reactant .
-  ?reactant rdf:type bp3:SmallMolecule .
-  ?reaction bp3:right ?product .
-  ?product rdf:type bp3:SmallMolecule .
-  ?product bp3:entityReference ?productRef .
-  ?productRef rdf:type bp3:SmallMoleculeReference .
-  ?catalysis bp3:controlled ?reaction .
-  ?catalysis bp3:controller ?enzyme .
-  ?enzyme rdf:type bp3:Protein .
-  ?enzyme bp3:entityReference ?enzymeRef .
-  ?enzymeRef rdf:type bp3:ProteinReference .
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Interaction .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?prot1 .
+  ?prot1 rdf:type bp3:Protein .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?prot2 .
+  ?prot2 rdf:type bp3:Protein .
+  # Avoid self-pairing and duplicate pairs
+  FILTER (STR(?prot1) < STR(?prot2))
 }

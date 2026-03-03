@@ -1,0 +1,37 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+   ?enzymeA abstraction:CatalysisPrecedes ?enzymeB
+}
+WHERE {
+  ?reaction1 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?catalysis1 bp3:controlled ?reaction1 .
+  ?reaction1 bp3:left ?leftMolecule1 .
+  ?leftMolecule1 rdf:type bp3:SmallMolecule .
+  ?reaction1 bp3:right ?connectingMolecule .
+  ?connectingMolecule rdf:type bp3:SmallMolecule .
+  ?catalysis1 (rdf:type/rdfs:subClassOf*) bp3:Control .
+  ?catalysis1 bp3:controller ?enzymeA .
+  ?enzymeA rdf:type bp3:Protein .
+  
+  ?reaction2 rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+  ?reaction2 bp3:left ?connectingMolecule .
+  ?reaction2 bp3:right ?rightMolecule2 . 
+  ?rightMolecule2 rdf:type bp3:SmallMolecule .
+  ?catalysis2 bp3:controlled ?reaction2 .
+  ?catalysis2 (rdf:type/rdfs:subClassOf*) bp3:Control .
+  ?catalysis2 bp3:controller ?enzymeB .
+  ?enzymeB rdf:type bp3:Protein .
+}

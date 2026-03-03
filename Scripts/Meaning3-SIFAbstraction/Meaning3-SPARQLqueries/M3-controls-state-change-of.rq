@@ -9,38 +9,33 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?enzymeRef abstraction:ControlsTransportOf ?protRef
+  ?enzymeRef abstraction:ControlsStateChangeOf ?protRef
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-
-  ?reaction bp3:left ?protLeft .
-  ?protLeft rdf:type bp3:Protein .
-  ?protLeft bp3:entityReference ?protRef .
-  
-  ?reaction bp3:right ?protRight .
-  ?protRight rdf:type bp3:Protein .
-  ?protRight bp3:entityReference ?protRef .
-
-  ?protRef rdf:type bp3:ProteinReference . 
-
-  # Define cellular locations for Protein 1 and Protein 2
-  ?protLeft bp3:cellularLocation ?cellularLocVocab1 .
-  ?protRight bp3:cellularLocation ?cellularLocVocab2 .
-  
   ?catalysis bp3:controlled ?reaction .
   ?catalysis (rdf:type/rdfs:subClassOf*) bp3:Control .
-  ?catalysis bp3:controller ?enzyme .
+  ?catalysis bp3:controller/((bp3:component|bp3:memberPhysicalEntity)*) ?enzyme .
   ?enzyme rdf:type bp3:Protein .
   ?enzyme bp3:entityReference ?enzymeRef .
-  ?enzymeRef rdf:type bp3:ProteinReference .
+  ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
-  # Ensure cellular locations of protein 1 and protein 2 are different 
-  FILTER (?cellularLocVocab1 != ?cellularLocVocab2)
-  # Ensure the enzyme is not the transported protein
+  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?protLeft .
+  ?protLeft rdf:type bp3:Protein .
+  ?protLeft bp3:entityReference ?protRef .
+
+  ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?protRight .
+  ?protRight rdf:type bp3:Protein .
+  ?protRight bp3:entityReference ?protRef .
+  ?protRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  
+  # State change of the product
+  ?protRight bp3:feature ?feature .
+  ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
   FILTER (?enzymeRef != ?protRef)
+  FILTER (?protLeft != ?protRight)
 }

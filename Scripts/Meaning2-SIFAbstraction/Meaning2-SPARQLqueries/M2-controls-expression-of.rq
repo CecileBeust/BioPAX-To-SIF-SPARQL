@@ -9,7 +9,7 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
@@ -18,35 +18,35 @@ CONSTRUCT {
 WHERE { 
 # Case where the reaction is a Conversion
   {
+    VALUES ?NucleicAcid { bp3:Dna bp3:Rna }
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+    ?reaction bp3:left ?left .
+    ?left rdf:type ?NucleicAcid .
     ?reaction bp3:right ?product .
     ?product rdf:type bp3:Protein .
-    ?reaction bp3:displayName ?reactionName .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
     ?catalysis bp3:controlled ?reaction .
     ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
-    ?product bp3:entityReference ?productRef .
-    ?productRef rdf:type bp3:ProteinReference .
     ?catalysis bp3:controller ?enzyme .
     ?enzyme rdf:type bp3:Protein .
     ?enzyme bp3:entityReference ?enzymeRef .
-    ?enzymeRef rdf:type bp3:ProteinReference .
-    FILTER(CONTAINS(LCASE(?reactionName), "expression"))
+    ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
   }
-
   UNION
-
   # Case where the reaction is a TemplateReaction
   {
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:TemplateReaction .
     ?reaction bp3:product ?product .
     ?product rdf:type bp3:Protein .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
     ?catalysis bp3:controlled ?reaction .
     ?catalysis rdf:type bp3:TemplateReactionRegulation .
-    ?product bp3:entityReference ?productRef .
-    ?productRef rdf:type bp3:ProteinReference .
     ?catalysis bp3:controller ?enzyme .
     ?enzyme rdf:type bp3:Protein .
     ?enzyme bp3:entityReference ?enzymeRef .
-    ?enzymeRef rdf:type bp3:ProteinReference .
+    ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
   }
+  FILTER(?enzymeRef != ?productRef)
 }

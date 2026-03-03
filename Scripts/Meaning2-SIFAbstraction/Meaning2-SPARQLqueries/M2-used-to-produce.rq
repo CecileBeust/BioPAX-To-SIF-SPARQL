@@ -9,23 +9,21 @@ PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
 PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
-PREFIX reactome: <http://www.reactome.org/biopax/93/48887#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?smallMolecule1Ref abstraction:reactsWith ?smallMolecule2Ref .
+  ?smallMolecule1Ref abstraction:UsedToProduce ?smallMolecule2Ref .
 }
 WHERE {
-  ?reaction rdf:type/(rdfs:subClassOf*) bp3:BiochemicalReaction .
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
   ?reaction bp3:left ?smallMolecule1 .
+  ?reaction bp3:right ?smallMolecule2 .
   ?smallMolecule1 rdf:type bp3:SmallMolecule .
   ?smallMolecule1 bp3:entityReference ?smallMolecule1Ref .
-  ?smallMolecule1Ref rdf:type bp3:SmallMoleculeReference .
-  
-  ?reaction bp3:left ?smallMolecule2 .
+  ?smallMolecule1Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
   ?smallMolecule2 rdf:type bp3:SmallMolecule .
   ?smallMolecule2 bp3:entityReference ?smallMolecule2Ref .
-  ?smallMolecule2Ref rdf:type bp3:SmallMoleculeReference .
-  
-  FILTER (STR(?smallMolecule1Ref) < STR(?smallMolecule2Ref))
+  ?smallmolecule2Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  FILTER (?smallMolecule1Ref != ?smallMolecule2Ref) 
 }

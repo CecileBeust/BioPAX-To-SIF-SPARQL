@@ -1,0 +1,52 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?enzymeRef abstraction:ControlsExpressionOf ?productRef
+}
+WHERE { 
+  # Case where the reaction is a Conversion
+  {
+    VALUES ?NucleicAcid { bp3:Dna bp3:Rna }
+    ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
+    ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?left .
+    ?left rdf:type ?NucleicAcid .
+    ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?product .
+    ?product rdf:type bp3:Protein .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+    ?catalysis bp3:controlled ?reaction .
+    ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
+    ?catalysis bp3:controller/((bp3:component|bp3:memberPhysicalEntity)*) ?enzyme .
+    ?enzyme rdf:type bp3:Protein .
+    ?enzyme bp3:entityReference ?enzymeRef .
+    ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  }
+  UNION
+  # Case where the reaction is a TemplateReaction
+  {
+    ?reaction rdf:type/(rdfs:subClassOf*) bp3:TemplateReaction .
+    ?reaction bp3:product/(bp3:memberPhysicalEntity)* ?product .
+    ?product rdf:type bp3:Protein .
+    ?product bp3:entityReference ?productRef .
+    ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+    ?catalysis bp3:controlled ?reaction .
+    ?catalysis rdf:type bp3:TemplateReactionRegulation .
+    ?catalysis bp3:controller/((bp3:component|bp3:memberPhysicalEntity)*) ?enzyme .
+    ?enzyme rdf:type bp3:Protein .
+    ?enzyme bp3:entityReference ?enzymeRef .
+    ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  }
+  FILTER (?enzymeRef != ?productRef)
+}

@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?participant1Ref abstraction:NeighborOf ?participant2Ref
+}
+WHERE {
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:Interaction .
+
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?participant1 .
+  ?participant1 (bp3:component|bp3:memberPhysicalEntity)* ?participant1Prot .
+  ?participant1Prot rdf:type bp3:Protein .
+  ?participant1Prot bp3:entityReference ?participant1Ref .
+  ?participant1Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?participant2 .
+  ?participant2 (bp3:component|bp3:memberPhysicalEntity)* ?participant2Prot .
+  ?participant2Prot rdf:type bp3:Protein .
+  ?participant2Prot bp3:entityReference ?participant2Ref .
+  ?participant2Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
+  FILTER (STR(?participant1Ref) < STR(?participant2Ref))
+  FILTER (?participant1Ref != ?participant2Ref)
+}

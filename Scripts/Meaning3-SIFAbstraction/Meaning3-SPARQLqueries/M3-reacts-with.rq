@@ -1,0 +1,55 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebidb: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX chebirel: <http://purl.obolibrary.org/obo/CHEBI#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX bp3: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
+PREFIX abstraction:<http://abstraction/#>
+
+CONSTRUCT {
+  ?smallMolecule1Ref abstraction:reactsWith ?smallMolecule2Ref .
+}
+WHERE {
+  ?reaction rdf:type/(rdfs:subClassOf*) bp3:BiochemicalReaction .
+  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?smallMolecule1 .
+  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?smallMolecule2 .
+  ?smallMolecule1 rdf:type bp3:SmallMolecule .
+  ?smallMolecule1 bp3:entityReference ?smallMolecule1Ref .
+  ?smallMolecule1Ref rdf:type bp3:SmallMoleculeReference .
+  ?smallMolecule1Ref bp3:xref ?smallMolecule1RefXref .
+  ?smallMolecule1RefXref rdf:type bp3:UnificationXref .
+  ?smallMolecule1RefXref bp3:db "ChEBI" .
+  ?smallMolecule1RefXref bp3:id ?smallMolecule1ID .
+  FILTER (?smallMolecule1ID NOT IN ("CHEBI:15377", "CHEBI:24636", "CHEBI:15378", "CHEBI:15379", "CHEBI:57783",
+    "CHEBI:13392", "CHEBI:16474", "CHEBI:58349", "CHEBI:18009", "CHEBI:13390",
+    "CHEBI:25523", "CHEBI:25524", "CHEBI:30616", "CHEBI:15422", "CHEBI:16761",
+    "CHEBI:456216", "CHEBI:57945", "CHEBI:16908", "CHEBI:57540", "CHEBI:15846",
+    "CHEBI:16526", "CHEBI:29888", "CHEBI:35782", "CHEBI:68836", "CHEBI:18361",
+    "CHEBI:43474", "CHEBI:35780", "CHEBI:18367", "CHEBI:26078", "CHEBI:77740",
+    "CHEBI:28931", "CHEBI:58307", "CHEBI:17877", "CHEBI:17552", "CHEBI:58189",
+    "CHEBI:37565", "CHEBI:15996"))
+
+  ?smallMolecule2 rdf:type bp3:SmallMolecule .
+  ?smallMolecule2 bp3:entityReference ?smallMolecule2Ref .
+  ?smallMolecule2Ref rdf:type bp3:SmallMoleculeReference .
+  ?smallMolecule2Ref bp3:xref ?smallMolecule2RefXref .
+  ?smallMolecule2RefXref rdf:type bp3:UnificationXref .
+  ?smallMolecule2RefXref bp3:db "ChEBI" .
+  ?smallMolecule2RefXref bp3:id ?smallMolecule2ID .
+  FILTER (?smallMolecule2ID NOT IN ("CHEBI:15377", "CHEBI:24636", "CHEBI:15378", "CHEBI:15379", "CHEBI:57783",
+    "CHEBI:13392", "CHEBI:16474", "CHEBI:58349", "CHEBI:18009", "CHEBI:13390",
+    "CHEBI:25523", "CHEBI:25524", "CHEBI:30616", "CHEBI:15422", "CHEBI:16761",
+    "CHEBI:456216", "CHEBI:57945", "CHEBI:16908", "CHEBI:57540", "CHEBI:15846",
+    "CHEBI:16526", "CHEBI:29888", "CHEBI:35782", "CHEBI:68836", "CHEBI:18361",
+    "CHEBI:43474", "CHEBI:35780", "CHEBI:18367", "CHEBI:26078", "CHEBI:77740",
+    "CHEBI:28931", "CHEBI:58307", "CHEBI:17877", "CHEBI:17552", "CHEBI:58189",
+    "CHEBI:37565", "CHEBI:15996"))
+
+  FILTER (?smallMolecule1Ref != ?smallMolecule2Ref)
+}
