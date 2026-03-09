@@ -15,7 +15,7 @@ These queries can be found in the following folders:
 
 In the `Scripts` folder, we also provide Jupyter notebboks that execute the SPARQL queries on the BioPAX exports of Reactome (version 95, December 2025) and PathBank (PathwayCommons, last updated 2019) for the three meanings of description:
 
-### Reference
+### References
 
 - E. Demir et al., “Using Biological Pathway Data with Paxtools,” PLoS Comput Biol, vol. 9, no. 9, p. e1003194, Sep. 2013, doi: 10.1371/journal.pcbi.1003194.
 - E. G. Cerami et al., “Pathway Commons, a web resource for biological pathway data,” Nucleic Acids Res, vol. 39, no. Database issue, pp. D685-690, Jan. 2011, doi: 10.1093/nar/gkq1039.
