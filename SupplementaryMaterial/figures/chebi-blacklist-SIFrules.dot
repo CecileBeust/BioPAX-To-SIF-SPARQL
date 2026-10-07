@@ -1,0 +1,2054 @@
+strict digraph "" {
+	graph [rankdir=BT];
+	node [label="\N"];
+	"http://purl.obolibrary.org/obo/CHEBI_15377"	[URL="http://purl.obolibrary.org/obo/CHEBI_15377",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="water
+CHEBI:15377",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_52625"	[URL="http://purl.obolibrary.org/obo/CHEBI_52625",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic hydroxy compound
+CHEBI:52625",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15377" -> "http://purl.obolibrary.org/obo/CHEBI_52625"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37176"	[URL="http://purl.obolibrary.org/obo/CHEBI_37176",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="mononuclear parent hydride
+CHEBI:37176",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15377" -> "http://purl.obolibrary.org/obo/CHEBI_37176"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33693"	[URL="http://purl.obolibrary.org/obo/CHEBI_33693",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxygen hydride
+CHEBI:33693",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15377" -> "http://purl.obolibrary.org/obo/CHEBI_33693"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24835"	[URL="http://purl.obolibrary.org/obo/CHEBI_24835",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic molecular entity
+CHEBI:24835",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_52625" -> "http://purl.obolibrary.org/obo/CHEBI_24835"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24651"	[URL="http://purl.obolibrary.org/obo/CHEBI_24651",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydroxides
+CHEBI:24651",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_52625" -> "http://purl.obolibrary.org/obo/CHEBI_24651"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33692"	[URL="http://purl.obolibrary.org/obo/CHEBI_33692",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydrides
+CHEBI:33692",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37176" -> "http://purl.obolibrary.org/obo/CHEBI_33692"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36902"	[URL="http://purl.obolibrary.org/obo/CHEBI_36902",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="chalcogen hydride
+CHEBI:36902",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33693" -> "http://purl.obolibrary.org/obo/CHEBI_36902"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_23367"	[URL="http://purl.obolibrary.org/obo/CHEBI_23367",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="molecular entity
+CHEBI:23367",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24835" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37577"	[URL="http://purl.obolibrary.org/obo/CHEBI_37577",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heteroatomic molecular entity
+CHEBI:37577",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24651" -> "http://purl.obolibrary.org/obo/CHEBI_37577"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33608"	[URL="http://purl.obolibrary.org/obo/CHEBI_33608",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydrogen molecular entity
+CHEBI:33608",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24651" -> "http://purl.obolibrary.org/obo/CHEBI_33608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25806"	[URL="http://purl.obolibrary.org/obo/CHEBI_25806",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxygen molecular entity
+CHEBI:25806",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24651" -> "http://purl.obolibrary.org/obo/CHEBI_25806"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24431"	[URL="http://purl.obolibrary.org/obo/CHEBI_24431",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="chemical entity
+CHEBI:24431",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_23367" -> "http://purl.obolibrary.org/obo/CHEBI_24431"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36357"	[URL="http://purl.obolibrary.org/obo/CHEBI_36357",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="polyatomic entity
+CHEBI:36357",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37577" -> "http://purl.obolibrary.org/obo/CHEBI_36357"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33674"	[URL="http://purl.obolibrary.org/obo/CHEBI_33674",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="s-block molecular entity
+CHEBI:33674",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33608" -> "http://purl.obolibrary.org/obo/CHEBI_33674"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33304"	[URL="http://purl.obolibrary.org/obo/CHEBI_33304",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="chalcogen molecular entity
+CHEBI:33304",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25806" -> "http://purl.obolibrary.org/obo/CHEBI_33304"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36357" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33579"	[URL="http://purl.obolibrary.org/obo/CHEBI_33579",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="main group molecular entity
+CHEBI:33579",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33674" -> "http://purl.obolibrary.org/obo/CHEBI_33579"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33579" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33675"	[URL="http://purl.obolibrary.org/obo/CHEBI_33675",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="p-block molecular entity
+CHEBI:33675",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33304" -> "http://purl.obolibrary.org/obo/CHEBI_33675"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33675" -> "http://purl.obolibrary.org/obo/CHEBI_33579"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33692" -> "http://purl.obolibrary.org/obo/CHEBI_37577"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33692" -> "http://purl.obolibrary.org/obo/CHEBI_33608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36902" -> "http://purl.obolibrary.org/obo/CHEBI_33304"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33242"	[URL="http://purl.obolibrary.org/obo/CHEBI_33242",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic hydride
+CHEBI:33242",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36902" -> "http://purl.obolibrary.org/obo/CHEBI_33242"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33242" -> "http://purl.obolibrary.org/obo/CHEBI_24835"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33242" -> "http://purl.obolibrary.org/obo/CHEBI_33692"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_41981"	[URL="http://purl.obolibrary.org/obo/CHEBI_41981",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="dideuterium oxide
+CHEBI:41981",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_41981" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29375"	[URL="http://purl.obolibrary.org/obo/CHEBI_29375",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="diprotium oxide
+CHEBI:29375",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29375" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33813"	[URL="http://purl.obolibrary.org/obo/CHEBI_33813",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="((18)O)water
+CHEBI:33813",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33813" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29374"	[URL="http://purl.obolibrary.org/obo/CHEBI_29374",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ditritium oxide
+CHEBI:29374",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29374" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33811"	[URL="http://purl.obolibrary.org/obo/CHEBI_33811",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydrogen tritium oxide
+CHEBI:33811",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33811" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33806"	[URL="http://purl.obolibrary.org/obo/CHEBI_33806",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="deuterium hydrogen oxide
+CHEBI:33806",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33806" -> "http://purl.obolibrary.org/obo/CHEBI_15377"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24636"	[URL="http://purl.obolibrary.org/obo/CHEBI_24636",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="proton
+CHEBI:24636",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33253"	[URL="http://purl.obolibrary.org/obo/CHEBI_33253",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleon
+CHEBI:33253",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24636" -> "http://purl.obolibrary.org/obo/CHEBI_33253"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15378"	[URL="http://purl.obolibrary.org/obo/CHEBI_15378",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="hydron
+CHEBI:15378",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24636" -> "http://purl.obolibrary.org/obo/CHEBI_15378"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36339"	[URL="http://purl.obolibrary.org/obo/CHEBI_36339",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="baryon
+CHEBI:36339",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33253" -> "http://purl.obolibrary.org/obo/CHEBI_36339"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36347"	[URL="http://purl.obolibrary.org/obo/CHEBI_36347",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nuclear particle
+CHEBI:36347",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33253" -> "http://purl.obolibrary.org/obo/CHEBI_36347"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33251"	[URL="http://purl.obolibrary.org/obo/CHEBI_33251",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monoatomic hydrogen
+CHEBI:33251",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15378" -> "http://purl.obolibrary.org/obo/CHEBI_33251"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33252"	[URL="http://purl.obolibrary.org/obo/CHEBI_33252",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="atomic nucleus
+CHEBI:33252",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15378" -> "http://purl.obolibrary.org/obo/CHEBI_33252"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_60242"	[URL="http://purl.obolibrary.org/obo/CHEBI_60242",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monovalent inorganic cation
+CHEBI:60242",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15378" -> "http://purl.obolibrary.org/obo/CHEBI_60242"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25414"	[URL="http://purl.obolibrary.org/obo/CHEBI_25414",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monoatomic monocation
+CHEBI:25414",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15378" -> "http://purl.obolibrary.org/obo/CHEBI_25414"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36344"	[URL="http://purl.obolibrary.org/obo/CHEBI_36344",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hadron
+CHEBI:36344",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36339" -> "http://purl.obolibrary.org/obo/CHEBI_36344"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36340"	[URL="http://purl.obolibrary.org/obo/CHEBI_36340",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="fermion
+CHEBI:36340",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36339" -> "http://purl.obolibrary.org/obo/CHEBI_36340"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36342"	[URL="http://purl.obolibrary.org/obo/CHEBI_36342",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="subatomic particle
+CHEBI:36342",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36347" -> "http://purl.obolibrary.org/obo/CHEBI_36342"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36343"	[URL="http://purl.obolibrary.org/obo/CHEBI_36343",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="composite particle
+CHEBI:36343",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36344" -> "http://purl.obolibrary.org/obo/CHEBI_36343"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36340" -> "http://purl.obolibrary.org/obo/CHEBI_36342"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36343" -> "http://purl.obolibrary.org/obo/CHEBI_36342"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33238"	[URL="http://purl.obolibrary.org/obo/CHEBI_33238",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monoatomic entity
+CHEBI:33238",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33251" -> "http://purl.obolibrary.org/obo/CHEBI_33238"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33260"	[URL="http://purl.obolibrary.org/obo/CHEBI_33260",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="elemental hydrogen
+CHEBI:33260",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33251" -> "http://purl.obolibrary.org/obo/CHEBI_33260"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33252" -> "http://purl.obolibrary.org/obo/CHEBI_36347"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36915"	[URL="http://purl.obolibrary.org/obo/CHEBI_36915",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic cation
+CHEBI:36915",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_60242" -> "http://purl.obolibrary.org/obo/CHEBI_36915"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_23906"	[URL="http://purl.obolibrary.org/obo/CHEBI_23906",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monoatomic cation
+CHEBI:23906",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25414" -> "http://purl.obolibrary.org/obo/CHEBI_23906"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33259"	[URL="http://purl.obolibrary.org/obo/CHEBI_33259",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="elemental molecular entity
+CHEBI:33259",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33238" -> "http://purl.obolibrary.org/obo/CHEBI_33259"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33260" -> "http://purl.obolibrary.org/obo/CHEBI_24835"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33260" -> "http://purl.obolibrary.org/obo/CHEBI_33608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33260" -> "http://purl.obolibrary.org/obo/CHEBI_33259"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33259" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36916"	[URL="http://purl.obolibrary.org/obo/CHEBI_36916",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="cation
+CHEBI:36916",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36915" -> "http://purl.obolibrary.org/obo/CHEBI_36916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36914"	[URL="http://purl.obolibrary.org/obo/CHEBI_36914",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic ion
+CHEBI:36914",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36915" -> "http://purl.obolibrary.org/obo/CHEBI_36914"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24870"	[URL="http://purl.obolibrary.org/obo/CHEBI_24870",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ion
+CHEBI:24870",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36916" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36914" -> "http://purl.obolibrary.org/obo/CHEBI_24835"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36914" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24870" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_23906" -> "http://purl.obolibrary.org/obo/CHEBI_36916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24867"	[URL="http://purl.obolibrary.org/obo/CHEBI_24867",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monoatomic ion
+CHEBI:24867",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_23906" -> "http://purl.obolibrary.org/obo/CHEBI_24867"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24867" -> "http://purl.obolibrary.org/obo/CHEBI_33238"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24867" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29234"	[URL="http://purl.obolibrary.org/obo/CHEBI_29234",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="triton
+CHEBI:29234",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29234" -> "http://purl.obolibrary.org/obo/CHEBI_15378"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29233"	[URL="http://purl.obolibrary.org/obo/CHEBI_29233",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="deuteron
+CHEBI:29233",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29233" -> "http://purl.obolibrary.org/obo/CHEBI_15378"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15379"	[URL="http://purl.obolibrary.org/obo/CHEBI_15379",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="dioxygen
+CHEBI:15379",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33263"	[URL="http://purl.obolibrary.org/obo/CHEBI_33263",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="diatomic oxygen
+CHEBI:33263",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15379" -> "http://purl.obolibrary.org/obo/CHEBI_33263"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25362"	[URL="http://purl.obolibrary.org/obo/CHEBI_25362",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="elemental molecule
+CHEBI:25362",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15379" -> "http://purl.obolibrary.org/obo/CHEBI_25362"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_138675"	[URL="http://purl.obolibrary.org/obo/CHEBI_138675",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="gas molecular entity
+CHEBI:138675",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15379" -> "http://purl.obolibrary.org/obo/CHEBI_138675"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33262"	[URL="http://purl.obolibrary.org/obo/CHEBI_33262",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="elemental oxygen
+CHEBI:33262",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33263" -> "http://purl.obolibrary.org/obo/CHEBI_33262"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25362" -> "http://purl.obolibrary.org/obo/CHEBI_33259"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25367"	[URL="http://purl.obolibrary.org/obo/CHEBI_25367",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="molecule
+CHEBI:25367",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25362" -> "http://purl.obolibrary.org/obo/CHEBI_25367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_138675" -> "http://purl.obolibrary.org/obo/CHEBI_33579"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33262" -> "http://purl.obolibrary.org/obo/CHEBI_24835"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33262" -> "http://purl.obolibrary.org/obo/CHEBI_25806"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33262" -> "http://purl.obolibrary.org/obo/CHEBI_33259"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25367" -> "http://purl.obolibrary.org/obo/CHEBI_36357"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_27140"	[URL="http://purl.obolibrary.org/obo/CHEBI_27140",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="triplet dioxygen
+CHEBI:27140",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_27140" -> "http://purl.obolibrary.org/obo/CHEBI_15379"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26689"	[URL="http://purl.obolibrary.org/obo/CHEBI_26689",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="singlet dioxygen
+CHEBI:26689",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26689" -> "http://purl.obolibrary.org/obo/CHEBI_15379"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_57783"	[URL="http://purl.obolibrary.org/obo/CHEBI_57783",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADPH(4-)
+CHEBI:57783",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_59724"	[URL="http://purl.obolibrary.org/obo/CHEBI_59724",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside triphosphate oxoanion
+CHEBI:59724",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57783" -> "http://purl.obolibrary.org/obo/CHEBI_59724"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17499"	[URL="http://purl.obolibrary.org/obo/CHEBI_17499",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydrogen donor
+CHEBI:17499",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57783" -> "http://purl.obolibrary.org/obo/CHEBI_17499"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_58945"	[URL="http://purl.obolibrary.org/obo/CHEBI_58945",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organophosphate oxoanion
+CHEBI:58945",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_59724" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17499" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26079"	[URL="http://purl.obolibrary.org/obo/CHEBI_26079",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphoric acid derivative
+CHEBI:26079",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58945" -> "http://purl.obolibrary.org/obo/CHEBI_26079"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25696"	[URL="http://purl.obolibrary.org/obo/CHEBI_25696",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic anion
+CHEBI:25696",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58945" -> "http://purl.obolibrary.org/obo/CHEBI_25696"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36359"	[URL="http://purl.obolibrary.org/obo/CHEBI_36359",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphorus oxoacid derivative
+CHEBI:36359",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26079" -> "http://purl.obolibrary.org/obo/CHEBI_36359"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_22563"	[URL="http://purl.obolibrary.org/obo/CHEBI_22563",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="anion
+CHEBI:22563",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25696" -> "http://purl.obolibrary.org/obo/CHEBI_22563"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25699"	[URL="http://purl.obolibrary.org/obo/CHEBI_25699",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic ion
+CHEBI:25699",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25696" -> "http://purl.obolibrary.org/obo/CHEBI_25699"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33241"	[URL="http://purl.obolibrary.org/obo/CHEBI_33241",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxoacid derivative
+CHEBI:33241",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36359" -> "http://purl.obolibrary.org/obo/CHEBI_33241"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36360"	[URL="http://purl.obolibrary.org/obo/CHEBI_36360",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphorus oxoacids and derivatives
+CHEBI:36360",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36359" -> "http://purl.obolibrary.org/obo/CHEBI_36360"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33241" -> "http://purl.obolibrary.org/obo/CHEBI_37577"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26082"	[URL="http://purl.obolibrary.org/obo/CHEBI_26082",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphorus molecular entity
+CHEBI:26082",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36360" -> "http://purl.obolibrary.org/obo/CHEBI_26082"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33302"	[URL="http://purl.obolibrary.org/obo/CHEBI_33302",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pnictogen molecular entity
+CHEBI:33302",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26082" -> "http://purl.obolibrary.org/obo/CHEBI_33302"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33302" -> "http://purl.obolibrary.org/obo/CHEBI_33675"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_22563" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25699" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_50860"	[URL="http://purl.obolibrary.org/obo/CHEBI_50860",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic molecular entity
+CHEBI:50860",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25699" -> "http://purl.obolibrary.org/obo/CHEBI_50860"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33582"	[URL="http://purl.obolibrary.org/obo/CHEBI_33582",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="carbon group molecular entity
+CHEBI:33582",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_50860" -> "http://purl.obolibrary.org/obo/CHEBI_33582"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33582" -> "http://purl.obolibrary.org/obo/CHEBI_33675"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13392"	[URL="http://purl.obolibrary.org/obo/CHEBI_13392",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NAD(P)H
+CHEBI:13392",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25524"	[URL="http://purl.obolibrary.org/obo/CHEBI_25524",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NAD(P)
+CHEBI:25524",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_13392" -> "http://purl.obolibrary.org/obo/CHEBI_25524"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37007"	[URL="http://purl.obolibrary.org/obo/CHEBI_37007",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nicotinamide dinucleotide
+CHEBI:37007",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25524" -> "http://purl.obolibrary.org/obo/CHEBI_37007"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61293"	[URL="http://purl.obolibrary.org/obo/CHEBI_61293",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="adenyl nucleotide
+CHEBI:61293",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25524" -> "http://purl.obolibrary.org/obo/CHEBI_61293"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25527"	[URL="http://purl.obolibrary.org/obo/CHEBI_25527",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nicotinamide nucleotide
+CHEBI:25527",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37007" -> "http://purl.obolibrary.org/obo/CHEBI_25527"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_47885"	[URL="http://purl.obolibrary.org/obo/CHEBI_47885",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="dinucleotide
+CHEBI:47885",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37007" -> "http://purl.obolibrary.org/obo/CHEBI_47885"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26395"	[URL="http://purl.obolibrary.org/obo/CHEBI_26395",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine nucleotide
+CHEBI:26395",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_61293" -> "http://purl.obolibrary.org/obo/CHEBI_26395"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36980"	[URL="http://purl.obolibrary.org/obo/CHEBI_36980",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pyridine nucleotide
+CHEBI:36980",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25527" -> "http://purl.obolibrary.org/obo/CHEBI_36980"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36976"	[URL="http://purl.obolibrary.org/obo/CHEBI_36976",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleotide
+CHEBI:36976",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_47885" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36980" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26421"	[URL="http://purl.obolibrary.org/obo/CHEBI_26421",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pyridines
+CHEBI:26421",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36980" -> "http://purl.obolibrary.org/obo/CHEBI_26421"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25608"	[URL="http://purl.obolibrary.org/obo/CHEBI_25608",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside phosphate
+CHEBI:25608",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36976" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38101"	[URL="http://purl.obolibrary.org/obo/CHEBI_38101",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organonitrogen heterocyclic compound
+CHEBI:38101",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26421" -> "http://purl.obolibrary.org/obo/CHEBI_38101"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25693"	[URL="http://purl.obolibrary.org/obo/CHEBI_25693",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic heteromonocyclic compound
+CHEBI:25693",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26421" -> "http://purl.obolibrary.org/obo/CHEBI_25693"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37734"	[URL="http://purl.obolibrary.org/obo/CHEBI_37734",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphoric ester
+CHEBI:37734",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25608" -> "http://purl.obolibrary.org/obo/CHEBI_37734"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25703"	[URL="http://purl.obolibrary.org/obo/CHEBI_25703",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic phosphate
+CHEBI:25703",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25608" -> "http://purl.obolibrary.org/obo/CHEBI_25703"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61120"	[URL="http://purl.obolibrary.org/obo/CHEBI_61120",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleobase-containing molecular entity
+CHEBI:61120",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25608" -> "http://purl.obolibrary.org/obo/CHEBI_61120"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37734" -> "http://purl.obolibrary.org/obo/CHEBI_26079"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35701"	[URL="http://purl.obolibrary.org/obo/CHEBI_35701",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ester
+CHEBI:35701",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37734" -> "http://purl.obolibrary.org/obo/CHEBI_35701"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25703" -> "http://purl.obolibrary.org/obo/CHEBI_26079"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26020"	[URL="http://purl.obolibrary.org/obo/CHEBI_26020",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphate
+CHEBI:26020",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25703" -> "http://purl.obolibrary.org/obo/CHEBI_26020"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25710"	[URL="http://purl.obolibrary.org/obo/CHEBI_25710",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organophosphorus compound
+CHEBI:25710",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25703" -> "http://purl.obolibrary.org/obo/CHEBI_25710"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51143"	[URL="http://purl.obolibrary.org/obo/CHEBI_51143",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nitrogen molecular entity
+CHEBI:51143",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_61120" -> "http://purl.obolibrary.org/obo/CHEBI_51143"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33833"	[URL="http://purl.obolibrary.org/obo/CHEBI_33833",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heteroarene
+CHEBI:33833",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_61120" -> "http://purl.obolibrary.org/obo/CHEBI_33833"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36963"	[URL="http://purl.obolibrary.org/obo/CHEBI_36963",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organooxygen compound
+CHEBI:36963",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_35701" -> "http://purl.obolibrary.org/obo/CHEBI_36963"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36963" -> "http://purl.obolibrary.org/obo/CHEBI_25806"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36962"	[URL="http://purl.obolibrary.org/obo/CHEBI_36962",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organochalcogen compound
+CHEBI:36962",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36963" -> "http://purl.obolibrary.org/obo/CHEBI_36962"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36962" -> "http://purl.obolibrary.org/obo/CHEBI_33304"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33285"	[URL="http://purl.obolibrary.org/obo/CHEBI_33285",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heteroorganic entity
+CHEBI:33285",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36962" -> "http://purl.obolibrary.org/obo/CHEBI_33285"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33285" -> "http://purl.obolibrary.org/obo/CHEBI_50860"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26020" -> "http://purl.obolibrary.org/obo/CHEBI_26079"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25710" -> "http://purl.obolibrary.org/obo/CHEBI_26082"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25710" -> "http://purl.obolibrary.org/obo/CHEBI_33285"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51143" -> "http://purl.obolibrary.org/obo/CHEBI_33302"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24532"	[URL="http://purl.obolibrary.org/obo/CHEBI_24532",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic heterocyclic compound
+CHEBI:24532",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33833" -> "http://purl.obolibrary.org/obo/CHEBI_24532"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33659"	[URL="http://purl.obolibrary.org/obo/CHEBI_33659",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic aromatic compound
+CHEBI:33659",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33833" -> "http://purl.obolibrary.org/obo/CHEBI_33659"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24532" -> "http://purl.obolibrary.org/obo/CHEBI_33285"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33832"	[URL="http://purl.obolibrary.org/obo/CHEBI_33832",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic cyclic compound
+CHEBI:33832",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24532" -> "http://purl.obolibrary.org/obo/CHEBI_33832"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_5686"	[URL="http://purl.obolibrary.org/obo/CHEBI_5686",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heterocyclic compound
+CHEBI:5686",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24532" -> "http://purl.obolibrary.org/obo/CHEBI_5686"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33659" -> "http://purl.obolibrary.org/obo/CHEBI_33832"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33655"	[URL="http://purl.obolibrary.org/obo/CHEBI_33655",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="aromatic compound
+CHEBI:33655",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33659" -> "http://purl.obolibrary.org/obo/CHEBI_33655"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_72695"	[URL="http://purl.obolibrary.org/obo/CHEBI_72695",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic molecule
+CHEBI:72695",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33832" -> "http://purl.obolibrary.org/obo/CHEBI_72695"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33595"	[URL="http://purl.obolibrary.org/obo/CHEBI_33595",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="cyclic compound
+CHEBI:33595",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33832" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_5686" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_72695" -> "http://purl.obolibrary.org/obo/CHEBI_25367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_72695" -> "http://purl.obolibrary.org/obo/CHEBI_50860"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33595" -> "http://purl.obolibrary.org/obo/CHEBI_25367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33655" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38101" -> "http://purl.obolibrary.org/obo/CHEBI_24532"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35352"	[URL="http://purl.obolibrary.org/obo/CHEBI_35352",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organonitrogen compound
+CHEBI:35352",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_38101" -> "http://purl.obolibrary.org/obo/CHEBI_35352"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25693" -> "http://purl.obolibrary.org/obo/CHEBI_24532"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33670"	[URL="http://purl.obolibrary.org/obo/CHEBI_33670",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heteromonocyclic compound
+CHEBI:33670",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25693" -> "http://purl.obolibrary.org/obo/CHEBI_33670"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35352" -> "http://purl.obolibrary.org/obo/CHEBI_33285"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35352" -> "http://purl.obolibrary.org/obo/CHEBI_51143"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33670" -> "http://purl.obolibrary.org/obo/CHEBI_5686"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33661"	[URL="http://purl.obolibrary.org/obo/CHEBI_33661",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monocyclic compound
+CHEBI:33661",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33670" -> "http://purl.obolibrary.org/obo/CHEBI_33661"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33661" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26395" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26401"	[URL="http://purl.obolibrary.org/obo/CHEBI_26401",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purines
+CHEBI:26401",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26395" -> "http://purl.obolibrary.org/obo/CHEBI_26401"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35875"	[URL="http://purl.obolibrary.org/obo/CHEBI_35875",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="imidazopyrimidine
+CHEBI:35875",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26401" -> "http://purl.obolibrary.org/obo/CHEBI_35875"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35875" -> "http://purl.obolibrary.org/obo/CHEBI_33833"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35875" -> "http://purl.obolibrary.org/obo/CHEBI_38101"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_27171"	[URL="http://purl.obolibrary.org/obo/CHEBI_27171",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic heterobicyclic compound
+CHEBI:27171",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_35875" -> "http://purl.obolibrary.org/obo/CHEBI_27171"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38166"	[URL="http://purl.obolibrary.org/obo/CHEBI_38166",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic heteropolycyclic compound
+CHEBI:38166",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_27171" -> "http://purl.obolibrary.org/obo/CHEBI_38166"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33672"	[URL="http://purl.obolibrary.org/obo/CHEBI_33672",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heterobicyclic compound
+CHEBI:33672",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_27171" -> "http://purl.obolibrary.org/obo/CHEBI_33672"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38166" -> "http://purl.obolibrary.org/obo/CHEBI_24532"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33671"	[URL="http://purl.obolibrary.org/obo/CHEBI_33671",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heteropolycyclic compound
+CHEBI:33671",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_38166" -> "http://purl.obolibrary.org/obo/CHEBI_33671"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33672" -> "http://purl.obolibrary.org/obo/CHEBI_5686"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33636"	[URL="http://purl.obolibrary.org/obo/CHEBI_33636",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="bicyclic compound
+CHEBI:33636",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33672" -> "http://purl.obolibrary.org/obo/CHEBI_33636"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33671" -> "http://purl.obolibrary.org/obo/CHEBI_5686"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33635"	[URL="http://purl.obolibrary.org/obo/CHEBI_33635",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="polycyclic compound
+CHEBI:33635",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33671" -> "http://purl.obolibrary.org/obo/CHEBI_33635"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33635" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33636" -> "http://purl.obolibrary.org/obo/CHEBI_33595"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90171"	[URL="http://purl.obolibrary.org/obo/CHEBI_90171",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="2-hydro-beta-NAD
+CHEBI:90171",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_90171" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13389"	[URL="http://purl.obolibrary.org/obo/CHEBI_13389",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="NAD
+CHEBI:13389",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_90171" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16474"	[URL="http://purl.obolibrary.org/obo/CHEBI_16474",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADPH
+CHEBI:16474",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16474" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25523"	[URL="http://purl.obolibrary.org/obo/CHEBI_25523",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADP
+CHEBI:25523",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16474" -> "http://purl.obolibrary.org/obo/CHEBI_25523"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90173"	[URL="http://purl.obolibrary.org/obo/CHEBI_90173",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="6-hydro-beta-NADP
+CHEBI:90173",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_90173" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90173" -> "http://purl.obolibrary.org/obo/CHEBI_25523"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90174"	[URL="http://purl.obolibrary.org/obo/CHEBI_90174",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="6-hydro-beta-NAD
+CHEBI:90174",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_90174" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90174" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16908"	[URL="http://purl.obolibrary.org/obo/CHEBI_16908",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADH
+CHEBI:16908",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16908" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16908" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90170"	[URL="http://purl.obolibrary.org/obo/CHEBI_90170",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="2-hydro-beta-NADP
+CHEBI:90170",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_90170" -> "http://purl.obolibrary.org/obo/CHEBI_13392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_90170" -> "http://purl.obolibrary.org/obo/CHEBI_25523"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25523" -> "http://purl.obolibrary.org/obo/CHEBI_25524"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_58349"	[URL="http://purl.obolibrary.org/obo/CHEBI_58349",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADP(3-)
+CHEBI:58349",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58349" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13193"	[URL="http://purl.obolibrary.org/obo/CHEBI_13193",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydrogen acceptor
+CHEBI:13193",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58349" -> "http://purl.obolibrary.org/obo/CHEBI_13193"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13193" -> "http://purl.obolibrary.org/obo/CHEBI_23367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_18009"	[URL="http://purl.obolibrary.org/obo/CHEBI_18009",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADP(+)
+CHEBI:18009",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_18009" -> "http://purl.obolibrary.org/obo/CHEBI_25523"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13390"	[URL="http://purl.obolibrary.org/obo/CHEBI_13390",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NAD(P)(+)
+CHEBI:13390",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_18009" -> "http://purl.obolibrary.org/obo/CHEBI_13390"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13390" -> "http://purl.obolibrary.org/obo/CHEBI_25524"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15846"	[URL="http://purl.obolibrary.org/obo/CHEBI_15846",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NAD(+)
+CHEBI:15846",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15846" -> "http://purl.obolibrary.org/obo/CHEBI_13390"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15846" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_44409"	[URL="http://purl.obolibrary.org/obo/CHEBI_44409",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="NADP zwitterion
+CHEBI:44409",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_44409" -> "http://purl.obolibrary.org/obo/CHEBI_25523"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_13389" -> "http://purl.obolibrary.org/obo/CHEBI_25524"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_44215"	[URL="http://purl.obolibrary.org/obo/CHEBI_44215",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="NAD zwitterion
+CHEBI:44215",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_44215" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26916"	[URL="http://purl.obolibrary.org/obo/CHEBI_26916",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="tetrahydronicotinamide adenine dinucleotide
+CHEBI:26916",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26916" -> "http://purl.obolibrary.org/obo/CHEBI_13389"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_134125"	[URL="http://purl.obolibrary.org/obo/CHEBI_134125",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="(R)-NADHX
+CHEBI:134125",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_134125" -> "http://purl.obolibrary.org/obo/CHEBI_26916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_64084"	[URL="http://purl.obolibrary.org/obo/CHEBI_64084",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="(S)-NADPHX
+CHEBI:64084",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_64084" -> "http://purl.obolibrary.org/obo/CHEBI_26916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_64085"	[URL="http://purl.obolibrary.org/obo/CHEBI_64085",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="(R)-NADPHX
+CHEBI:64085",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_64085" -> "http://purl.obolibrary.org/obo/CHEBI_26916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15644"	[URL="http://purl.obolibrary.org/obo/CHEBI_15644",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="(S)-NADHX(1+)
+CHEBI:15644",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15644" -> "http://purl.obolibrary.org/obo/CHEBI_26916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_44236"	[URL="http://purl.obolibrary.org/obo/CHEBI_44236",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="(S)-NADHX
+CHEBI:44236",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_44236" -> "http://purl.obolibrary.org/obo/CHEBI_26916"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_30616"	[URL="http://purl.obolibrary.org/obo/CHEBI_30616",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="ATP(4-)
+CHEBI:30616",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_61557"	[URL="http://purl.obolibrary.org/obo/CHEBI_61557",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-triphoshate(4-)
+CHEBI:61557",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_30616" -> "http://purl.obolibrary.org/obo/CHEBI_61557"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61557" -> "http://purl.obolibrary.org/obo/CHEBI_59724"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15422"	[URL="http://purl.obolibrary.org/obo/CHEBI_15422",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="ATP
+CHEBI:15422",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37045"	[URL="http://purl.obolibrary.org/obo/CHEBI_37045",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside 5'-triphosphate
+CHEBI:37045",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15422" -> "http://purl.obolibrary.org/obo/CHEBI_37045"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37096"	[URL="http://purl.obolibrary.org/obo/CHEBI_37096",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="adenosine 5'-phosphate
+CHEBI:37096",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15422" -> "http://purl.obolibrary.org/obo/CHEBI_37096"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26400"	[URL="http://purl.obolibrary.org/obo/CHEBI_26400",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleotide
+CHEBI:26400",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37045" -> "http://purl.obolibrary.org/obo/CHEBI_26400"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26398"	[URL="http://purl.obolibrary.org/obo/CHEBI_26398",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside triphosphate
+CHEBI:26398",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37045" -> "http://purl.obolibrary.org/obo/CHEBI_26398"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37076"	[URL="http://purl.obolibrary.org/obo/CHEBI_37076",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 5'-triphosphate
+CHEBI:37076",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37045" -> "http://purl.obolibrary.org/obo/CHEBI_37076"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_22256"	[URL="http://purl.obolibrary.org/obo/CHEBI_22256",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="adenosine phosphate
+CHEBI:22256",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37096" -> "http://purl.obolibrary.org/obo/CHEBI_22256"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26400" -> "http://purl.obolibrary.org/obo/CHEBI_26395"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26561"	[URL="http://purl.obolibrary.org/obo/CHEBI_26561",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleotide
+CHEBI:26561",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26400" -> "http://purl.obolibrary.org/obo/CHEBI_26561"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26393"	[URL="http://purl.obolibrary.org/obo/CHEBI_26393",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine nucleoside triphosphate
+CHEBI:26393",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26398" -> "http://purl.obolibrary.org/obo/CHEBI_26393"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17972"	[URL="http://purl.obolibrary.org/obo/CHEBI_17972",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside triphosphate
+CHEBI:17972",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26398" -> "http://purl.obolibrary.org/obo/CHEBI_17972"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37015"	[URL="http://purl.obolibrary.org/obo/CHEBI_37015",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 5'-phosphate
+CHEBI:37015",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37076" -> "http://purl.obolibrary.org/obo/CHEBI_37015"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26561" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26562"	[URL="http://purl.obolibrary.org/obo/CHEBI_26562",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribose phosphate
+CHEBI:26562",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26561" -> "http://purl.obolibrary.org/obo/CHEBI_26562"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25900"	[URL="http://purl.obolibrary.org/obo/CHEBI_25900",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="aldopentose phosphate
+CHEBI:25900",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26562" -> "http://purl.obolibrary.org/obo/CHEBI_25900"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_84055"	[URL="http://purl.obolibrary.org/obo/CHEBI_84055",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pentose phosphate
+CHEBI:84055",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25900" -> "http://purl.obolibrary.org/obo/CHEBI_84055"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35131"	[URL="http://purl.obolibrary.org/obo/CHEBI_35131",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="aldose phosphate
+CHEBI:35131",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25900" -> "http://purl.obolibrary.org/obo/CHEBI_35131"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33447"	[URL="http://purl.obolibrary.org/obo/CHEBI_33447",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phospho sugar
+CHEBI:33447",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_84055" -> "http://purl.obolibrary.org/obo/CHEBI_33447"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_63409"	[URL="http://purl.obolibrary.org/obo/CHEBI_63409",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pentose derivative
+CHEBI:63409",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_84055" -> "http://purl.obolibrary.org/obo/CHEBI_63409"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35131" -> "http://purl.obolibrary.org/obo/CHEBI_33447"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26816"	[URL="http://purl.obolibrary.org/obo/CHEBI_26816",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="carbohydrate phosphate
+CHEBI:26816",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33447" -> "http://purl.obolibrary.org/obo/CHEBI_26816"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_63367"	[URL="http://purl.obolibrary.org/obo/CHEBI_63367",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="monosaccharide derivative
+CHEBI:63367",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33447" -> "http://purl.obolibrary.org/obo/CHEBI_63367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_63409" -> "http://purl.obolibrary.org/obo/CHEBI_63367"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26816" -> "http://purl.obolibrary.org/obo/CHEBI_37734"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26816" -> "http://purl.obolibrary.org/obo/CHEBI_25703"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_63299"	[URL="http://purl.obolibrary.org/obo/CHEBI_63299",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="carbohydrate derivative
+CHEBI:63299",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26816" -> "http://purl.obolibrary.org/obo/CHEBI_63299"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_63367" -> "http://purl.obolibrary.org/obo/CHEBI_63299"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_78616"	[URL="http://purl.obolibrary.org/obo/CHEBI_78616",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="carbohydrates and carbohydrate derivatives
+CHEBI:78616",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_63299" -> "http://purl.obolibrary.org/obo/CHEBI_78616"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_78616" -> "http://purl.obolibrary.org/obo/CHEBI_36963"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17326"	[URL="http://purl.obolibrary.org/obo/CHEBI_17326",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-triphoshate
+CHEBI:17326",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26393" -> "http://purl.obolibrary.org/obo/CHEBI_17326"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17972" -> "http://purl.obolibrary.org/obo/CHEBI_17326"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17326" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37015" -> "http://purl.obolibrary.org/obo/CHEBI_26561"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16701"	[URL="http://purl.obolibrary.org/obo/CHEBI_16701",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-phosphate
+CHEBI:16701",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37015" -> "http://purl.obolibrary.org/obo/CHEBI_16701"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29075"	[URL="http://purl.obolibrary.org/obo/CHEBI_29075",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="mononucleotide
+CHEBI:29075",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16701" -> "http://purl.obolibrary.org/obo/CHEBI_29075"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29075" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_22256" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61296"	[URL="http://purl.obolibrary.org/obo/CHEBI_61296",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="adenyl ribonucleotide
+CHEBI:61296",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_22256" -> "http://purl.obolibrary.org/obo/CHEBI_61296"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61296" -> "http://purl.obolibrary.org/obo/CHEBI_61293"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61296" -> "http://purl.obolibrary.org/obo/CHEBI_26400"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16761"	[URL="http://purl.obolibrary.org/obo/CHEBI_16761",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="ADP
+CHEBI:16761",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16761" -> "http://purl.obolibrary.org/obo/CHEBI_37096"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37038"	[URL="http://purl.obolibrary.org/obo/CHEBI_37038",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside 5'-diphosphate
+CHEBI:37038",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16761" -> "http://purl.obolibrary.org/obo/CHEBI_37038"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37038" -> "http://purl.obolibrary.org/obo/CHEBI_26400"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37075"	[URL="http://purl.obolibrary.org/obo/CHEBI_37075",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 5'-diphosphate
+CHEBI:37075",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37038" -> "http://purl.obolibrary.org/obo/CHEBI_37075"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26396"	[URL="http://purl.obolibrary.org/obo/CHEBI_26396",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside diphosphate
+CHEBI:26396",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37038" -> "http://purl.obolibrary.org/obo/CHEBI_26396"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37075" -> "http://purl.obolibrary.org/obo/CHEBI_37015"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26391"	[URL="http://purl.obolibrary.org/obo/CHEBI_26391",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine nucleoside diphosphate
+CHEBI:26391",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26396" -> "http://purl.obolibrary.org/obo/CHEBI_26391"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17668"	[URL="http://purl.obolibrary.org/obo/CHEBI_17668",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside diphosphat
+CHEBI:17668",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26396" -> "http://purl.obolibrary.org/obo/CHEBI_17668"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16862"	[URL="http://purl.obolibrary.org/obo/CHEBI_16862",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-diphosphate
+CHEBI:16862",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26391" -> "http://purl.obolibrary.org/obo/CHEBI_16862"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17668" -> "http://purl.obolibrary.org/obo/CHEBI_16862"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16862" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_456216"	[URL="http://purl.obolibrary.org/obo/CHEBI_456216",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="ADP(3-)
+CHEBI:456216",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57930"	[URL="http://purl.obolibrary.org/obo/CHEBI_57930",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-diphosphate(3-)
+CHEBI:57930",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_456216" -> "http://purl.obolibrary.org/obo/CHEBI_57930"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_57930" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_57945"	[URL="http://purl.obolibrary.org/obo/CHEBI_57945",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NADH(2-)
+CHEBI:57945",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57945" -> "http://purl.obolibrary.org/obo/CHEBI_17499"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_59737"	[URL="http://purl.obolibrary.org/obo/CHEBI_59737",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleotide-sugar oxoanion
+CHEBI:59737",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57945" -> "http://purl.obolibrary.org/obo/CHEBI_59737"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_59737" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_57540"	[URL="http://purl.obolibrary.org/obo/CHEBI_57540",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="NAD(1-)
+CHEBI:57540",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_57540" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_57540" -> "http://purl.obolibrary.org/obo/CHEBI_13193"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16526"	[URL="http://purl.obolibrary.org/obo/CHEBI_16526",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="carbon dioxide
+CHEBI:16526",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16526" -> "http://purl.obolibrary.org/obo/CHEBI_138675"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_23014"	[URL="http://purl.obolibrary.org/obo/CHEBI_23014",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="carbon oxide
+CHEBI:23014",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16526" -> "http://purl.obolibrary.org/obo/CHEBI_23014"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_64708"	[URL="http://purl.obolibrary.org/obo/CHEBI_64708",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="one-carbon compound
+CHEBI:64708",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_16526" -> "http://purl.obolibrary.org/obo/CHEBI_64708"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_23014" -> "http://purl.obolibrary.org/obo/CHEBI_36963"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25701"	[URL="http://purl.obolibrary.org/obo/CHEBI_25701",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic oxide
+CHEBI:25701",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_23014" -> "http://purl.obolibrary.org/obo/CHEBI_25701"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_64708" -> "http://purl.obolibrary.org/obo/CHEBI_50860"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25701" -> "http://purl.obolibrary.org/obo/CHEBI_72695"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25741"	[URL="http://purl.obolibrary.org/obo/CHEBI_25741",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxide
+CHEBI:25741",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_25701" -> "http://purl.obolibrary.org/obo/CHEBI_25741"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25741" -> "http://purl.obolibrary.org/obo/CHEBI_37577"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_25741" -> "http://purl.obolibrary.org/obo/CHEBI_25806"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29888"	[URL="http://purl.obolibrary.org/obo/CHEBI_29888",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="diphosphoric acid
+CHEBI:29888",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37786"	[URL="http://purl.obolibrary.org/obo/CHEBI_37786",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="acyclic phosphorus acid anhydride
+CHEBI:37786",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29888" -> "http://purl.obolibrary.org/obo/CHEBI_37786"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33457"	[URL="http://purl.obolibrary.org/obo/CHEBI_33457",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphorus oxoacid
+CHEBI:33457",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29888" -> "http://purl.obolibrary.org/obo/CHEBI_33457"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36608"	[URL="http://purl.obolibrary.org/obo/CHEBI_36608",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="acyclic acid anhydride
+CHEBI:36608",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37786" -> "http://purl.obolibrary.org/obo/CHEBI_36608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33457" -> "http://purl.obolibrary.org/obo/CHEBI_36360"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33408"	[URL="http://purl.obolibrary.org/obo/CHEBI_33408",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pnictogen oxoacid
+CHEBI:33408",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33457" -> "http://purl.obolibrary.org/obo/CHEBI_33408"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36606"	[URL="http://purl.obolibrary.org/obo/CHEBI_36606",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="acid anhydride
+CHEBI:36606",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_36608" -> "http://purl.obolibrary.org/obo/CHEBI_36606"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36606" -> "http://purl.obolibrary.org/obo/CHEBI_50860"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33408" -> "http://purl.obolibrary.org/obo/CHEBI_33302"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24833"	[URL="http://purl.obolibrary.org/obo/CHEBI_24833",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxoacid
+CHEBI:24833",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33408" -> "http://purl.obolibrary.org/obo/CHEBI_24833"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24833" -> "http://purl.obolibrary.org/obo/CHEBI_24651"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35782"	[URL="http://purl.obolibrary.org/obo/CHEBI_35782",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="diphosphate ion
+CHEBI:35782",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33461"	[URL="http://purl.obolibrary.org/obo/CHEBI_33461",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphorus oxoanion
+CHEBI:33461",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_35782" -> "http://purl.obolibrary.org/obo/CHEBI_33461"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33461" -> "http://purl.obolibrary.org/obo/CHEBI_26082"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24834"	[URL="http://purl.obolibrary.org/obo/CHEBI_24834",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic anion
+CHEBI:24834",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33461" -> "http://purl.obolibrary.org/obo/CHEBI_24834"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33459"	[URL="http://purl.obolibrary.org/obo/CHEBI_33459",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="pnictogen oxoanion
+CHEBI:33459",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33461" -> "http://purl.obolibrary.org/obo/CHEBI_33459"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24834" -> "http://purl.obolibrary.org/obo/CHEBI_36914"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24834" -> "http://purl.obolibrary.org/obo/CHEBI_22563"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33459" -> "http://purl.obolibrary.org/obo/CHEBI_33302"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35406"	[URL="http://purl.obolibrary.org/obo/CHEBI_35406",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="oxoanion
+CHEBI:35406",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33459" -> "http://purl.obolibrary.org/obo/CHEBI_35406"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35406" -> "http://purl.obolibrary.org/obo/CHEBI_25741"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33273"	[URL="http://purl.obolibrary.org/obo/CHEBI_33273",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="polyatomic anion
+CHEBI:33273",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_35406" -> "http://purl.obolibrary.org/obo/CHEBI_33273"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33273" -> "http://purl.obolibrary.org/obo/CHEBI_22563"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36358"	[URL="http://purl.obolibrary.org/obo/CHEBI_36358",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="polyatomic ion
+CHEBI:36358",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33273" -> "http://purl.obolibrary.org/obo/CHEBI_36358"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36358" -> "http://purl.obolibrary.org/obo/CHEBI_36357"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36358" -> "http://purl.obolibrary.org/obo/CHEBI_24870"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33019"	[URL="http://purl.obolibrary.org/obo/CHEBI_33019",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="diphosphate(3-)
+CHEBI:33019",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33019" -> "http://purl.obolibrary.org/obo/CHEBI_35782"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_45212"	[URL="http://purl.obolibrary.org/obo/CHEBI_45212",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="diphosphate(2-)
+CHEBI:45212",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_45212" -> "http://purl.obolibrary.org/obo/CHEBI_35782"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_33017"	[URL="http://purl.obolibrary.org/obo/CHEBI_33017",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="diphosphate(1-)
+CHEBI:33017",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33017" -> "http://purl.obolibrary.org/obo/CHEBI_35782"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_18361"	[URL="http://purl.obolibrary.org/obo/CHEBI_18361",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="diphosphate(4-)
+CHEBI:18361",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_18361" -> "http://purl.obolibrary.org/obo/CHEBI_35782"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_68836"	[URL="http://purl.obolibrary.org/obo/CHEBI_68836",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="diphosphate group
+CHEBI:68836",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33246"	[URL="http://purl.obolibrary.org/obo/CHEBI_33246",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="inorganic group
+CHEBI:33246",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_68836" -> "http://purl.obolibrary.org/obo/CHEBI_33246"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24433"	[URL="http://purl.obolibrary.org/obo/CHEBI_24433",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="group
+CHEBI:24433",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_33246" -> "http://purl.obolibrary.org/obo/CHEBI_24433"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24433" -> "http://purl.obolibrary.org/obo/CHEBI_24431"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_43474"	[URL="http://purl.obolibrary.org/obo/CHEBI_43474",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="hydrogenphosphate
+CHEBI:43474",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_79388"	[URL="http://purl.obolibrary.org/obo/CHEBI_79388",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="divalent inorganic anion
+CHEBI:79388",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_43474" -> "http://purl.obolibrary.org/obo/CHEBI_79388"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35780"	[URL="http://purl.obolibrary.org/obo/CHEBI_35780",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="phosphate ion
+CHEBI:35780",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_43474" -> "http://purl.obolibrary.org/obo/CHEBI_35780"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_79388" -> "http://purl.obolibrary.org/obo/CHEBI_24834"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_35780" -> "http://purl.obolibrary.org/obo/CHEBI_33461"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29932"	[URL="http://purl.obolibrary.org/obo/CHEBI_29932",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="tetraoxidophosphate(.2-)
+CHEBI:29932",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29932" -> "http://purl.obolibrary.org/obo/CHEBI_35780"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_39745"	[URL="http://purl.obolibrary.org/obo/CHEBI_39745",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="dihydrogenphosphate
+CHEBI:39745",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_39745" -> "http://purl.obolibrary.org/obo/CHEBI_35780"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_18367"	[URL="http://purl.obolibrary.org/obo/CHEBI_18367",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="phosphate(3-)
+CHEBI:18367",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_18367" -> "http://purl.obolibrary.org/obo/CHEBI_35780"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_79387"	[URL="http://purl.obolibrary.org/obo/CHEBI_79387",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="trivalent inorganic anion
+CHEBI:79387",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_18367" -> "http://purl.obolibrary.org/obo/CHEBI_79387"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_29925"	[URL="http://purl.obolibrary.org/obo/CHEBI_29925",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="hydroxidotrioxidophosphate(.1-)
+CHEBI:29925",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_29925" -> "http://purl.obolibrary.org/obo/CHEBI_35780"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_79387" -> "http://purl.obolibrary.org/obo/CHEBI_24834"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26078"	[URL="http://purl.obolibrary.org/obo/CHEBI_26078",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="phosphoric acid
+CHEBI:26078",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_59698"	[URL="http://purl.obolibrary.org/obo/CHEBI_59698",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="phosphoric acids
+CHEBI:59698",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26078" -> "http://purl.obolibrary.org/obo/CHEBI_59698"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_59698" -> "http://purl.obolibrary.org/obo/CHEBI_33457"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_77740"	[URL="http://purl.obolibrary.org/obo/CHEBI_77740",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="adenosine 2'-phosphate(2-)
+CHEBI:77740",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_77740" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_78552"	[URL="http://purl.obolibrary.org/obo/CHEBI_78552",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 2'-monophosphate(2-)
+CHEBI:78552",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_77740" -> "http://purl.obolibrary.org/obo/CHEBI_78552"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_78552" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_28931"	[URL="http://purl.obolibrary.org/obo/CHEBI_28931",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="3'-AMP
+CHEBI:28931",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37097"	[URL="http://purl.obolibrary.org/obo/CHEBI_37097",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="adenosine 3'-phosphate
+CHEBI:37097",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_28931" -> "http://purl.obolibrary.org/obo/CHEBI_37097"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37020"	[URL="http://purl.obolibrary.org/obo/CHEBI_37020",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside 3'-monophosphate
+CHEBI:37020",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_28931" -> "http://purl.obolibrary.org/obo/CHEBI_37020"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37097" -> "http://purl.obolibrary.org/obo/CHEBI_22256"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37020" -> "http://purl.obolibrary.org/obo/CHEBI_26400"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37009"	[URL="http://purl.obolibrary.org/obo/CHEBI_37009",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 3'-monophosphate
+CHEBI:37009",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37020" -> "http://purl.obolibrary.org/obo/CHEBI_37009"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26397"	[URL="http://purl.obolibrary.org/obo/CHEBI_26397",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine ribonucleoside monophosphate
+CHEBI:26397",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37020" -> "http://purl.obolibrary.org/obo/CHEBI_26397"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26558"	[URL="http://purl.obolibrary.org/obo/CHEBI_26558",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside monophosphate
+CHEBI:26558",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37009" -> "http://purl.obolibrary.org/obo/CHEBI_26558"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37013"	[URL="http://purl.obolibrary.org/obo/CHEBI_37013",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="ribonucleoside 3'-phosphate
+CHEBI:37013",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37009" -> "http://purl.obolibrary.org/obo/CHEBI_37013"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26397" -> "http://purl.obolibrary.org/obo/CHEBI_26558"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26392"	[URL="http://purl.obolibrary.org/obo/CHEBI_26392",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="purine nucleoside monophosphate
+CHEBI:26392",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26397" -> "http://purl.obolibrary.org/obo/CHEBI_26392"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17188"	[URL="http://purl.obolibrary.org/obo/CHEBI_17188",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 5'-monophosphate
+CHEBI:17188",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26558" -> "http://purl.obolibrary.org/obo/CHEBI_17188"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37013" -> "http://purl.obolibrary.org/obo/CHEBI_26561"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16492"	[URL="http://purl.obolibrary.org/obo/CHEBI_16492",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="nucleoside 3'-phosphate
+CHEBI:16492",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37013" -> "http://purl.obolibrary.org/obo/CHEBI_16492"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17188" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_16492" -> "http://purl.obolibrary.org/obo/CHEBI_29075"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26392" -> "http://purl.obolibrary.org/obo/CHEBI_17188"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_58307"	[URL="http://purl.obolibrary.org/obo/CHEBI_58307",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="FADH2(2-)
+CHEBI:58307",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58307" -> "http://purl.obolibrary.org/obo/CHEBI_58945"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17877"	[URL="http://purl.obolibrary.org/obo/CHEBI_17877",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="FADH2
+CHEBI:17877",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24040"	[URL="http://purl.obolibrary.org/obo/CHEBI_24040",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="flavin adenine dinucleotide
+CHEBI:24040",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_17877" -> "http://purl.obolibrary.org/obo/CHEBI_24040"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24040" -> "http://purl.obolibrary.org/obo/CHEBI_47885"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_30527"	[URL="http://purl.obolibrary.org/obo/CHEBI_30527",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="flavin
+CHEBI:30527",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24040" -> "http://purl.obolibrary.org/obo/CHEBI_30527"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36981"	[URL="http://purl.obolibrary.org/obo/CHEBI_36981",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="flavin nucleotide
+CHEBI:36981",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24040" -> "http://purl.obolibrary.org/obo/CHEBI_36981"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38925"	[URL="http://purl.obolibrary.org/obo/CHEBI_38925",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="benzopteridine
+CHEBI:38925",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_30527" -> "http://purl.obolibrary.org/obo/CHEBI_38925"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36981" -> "http://purl.obolibrary.org/obo/CHEBI_36976"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_38925" -> "http://purl.obolibrary.org/obo/CHEBI_38101"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26979"	[URL="http://purl.obolibrary.org/obo/CHEBI_26979",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic heterotricyclic compound
+CHEBI:26979",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_38925" -> "http://purl.obolibrary.org/obo/CHEBI_26979"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_26979" -> "http://purl.obolibrary.org/obo/CHEBI_38166"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36688"	[URL="http://purl.obolibrary.org/obo/CHEBI_36688",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="heterotricyclic compound
+CHEBI:36688",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26979" -> "http://purl.obolibrary.org/obo/CHEBI_36688"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51959"	[URL="http://purl.obolibrary.org/obo/CHEBI_51959",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic tricyclic compound
+CHEBI:51959",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_26979" -> "http://purl.obolibrary.org/obo/CHEBI_51959"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_36688" -> "http://purl.obolibrary.org/obo/CHEBI_33671"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51958"	[URL="http://purl.obolibrary.org/obo/CHEBI_51958",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="organic polycyclic compound
+CHEBI:51958",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_51959" -> "http://purl.obolibrary.org/obo/CHEBI_51958"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51958" -> "http://purl.obolibrary.org/obo/CHEBI_33832"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_51958" -> "http://purl.obolibrary.org/obo/CHEBI_33635"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_17552"	[URL="http://purl.obolibrary.org/obo/CHEBI_17552",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="GDP
+CHEBI:17552",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_17552" -> "http://purl.obolibrary.org/obo/CHEBI_37038"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37121"	[URL="http://purl.obolibrary.org/obo/CHEBI_37121",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="guanosine 5'-phosphate
+CHEBI:37121",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_17552" -> "http://purl.obolibrary.org/obo/CHEBI_37121"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24455"	[URL="http://purl.obolibrary.org/obo/CHEBI_24455",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="guanosine phosphate
+CHEBI:24455",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37121" -> "http://purl.obolibrary.org/obo/CHEBI_24455"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_24455" -> "http://purl.obolibrary.org/obo/CHEBI_25608"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61295"	[URL="http://purl.obolibrary.org/obo/CHEBI_61295",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="guanyl ribonucleotide
+CHEBI:61295",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_24455" -> "http://purl.obolibrary.org/obo/CHEBI_61295"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61295" -> "http://purl.obolibrary.org/obo/CHEBI_26400"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61292"	[URL="http://purl.obolibrary.org/obo/CHEBI_61292",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="guanyl nucleotide
+CHEBI:61292",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_61295" -> "http://purl.obolibrary.org/obo/CHEBI_61292"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_61292" -> "http://purl.obolibrary.org/obo/CHEBI_26395"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_58189"	[URL="http://purl.obolibrary.org/obo/CHEBI_58189",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="GDP(3-)
+CHEBI:58189",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_58189" -> "http://purl.obolibrary.org/obo/CHEBI_57930"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_37565"	[URL="http://purl.obolibrary.org/obo/CHEBI_37565",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="GTP(4-)
+CHEBI:37565",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_37565" -> "http://purl.obolibrary.org/obo/CHEBI_61557"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15996"	[URL="http://purl.obolibrary.org/obo/CHEBI_15996",
+		color="#ff0000",
+		fillcolor="#ffbbbb",
+		label="GTP
+CHEBI:15996",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_15996" -> "http://purl.obolibrary.org/obo/CHEBI_37045"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_15996" -> "http://purl.obolibrary.org/obo/CHEBI_37121"	[arrowhead=empty];
+	"http://purl.obolibrary.org/obo/CHEBI_85167"	[URL="http://purl.obolibrary.org/obo/CHEBI_85167",
+		color="#000000",
+		fillcolor="#ffffff",
+		label="gamma-aminooctyl-GTP
+CHEBI:85167",
+		shape=rectangle,
+		style=filled];
+	"http://purl.obolibrary.org/obo/CHEBI_85167" -> "http://purl.obolibrary.org/obo/CHEBI_15996"	[arrowhead=empty];
+}
