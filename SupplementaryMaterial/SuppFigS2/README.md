@@ -1,5 +1,7 @@
 # biopaxMoleculesBlacklistSIF
 
+code authorship: Olivier Dameron
+
 Analysis of the small molecules blacklisted in [Paxtools](https://www.biopax.org/Paxtools/) using the [ChEBI](https://www.ebi.ac.uk/chebi/) ontology.
 
 The ChEBI identifiers were retrieved from the files:
