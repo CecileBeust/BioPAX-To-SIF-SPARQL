@@ -1,0 +1,17 @@
+Source,Interaction,Target
+http://smpdb.ca/pathways/#Protein/19458_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19460_Nucleus
+http://smpdb.ca/pathways/#Protein/19454_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19461_Cytosol
+http://smpdb.ca/pathways/#Protein/19458_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19460_Cytosol
+http://smpdb.ca/pathways/#Protein/1424_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/1783_Nucleus
+http://smpdb.ca/pathways/#Protein/1424_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/1783_Cytosol
+http://smpdb.ca/pathways/#Protein/1424_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/1783_Nucleus
+http://smpdb.ca/pathways/#Protein/19455_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19459_Nucleus
+http://smpdb.ca/pathways/#Protein/19455_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19459_Cytosol
+http://smpdb.ca/pathways/#Protein/19458_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19460_Nucleus
+http://smpdb.ca/pathways/#Protein/19455_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19459_Cytosol
+http://smpdb.ca/pathways/#Protein/19455_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19459_Nucleus
+http://smpdb.ca/pathways/#Protein/1424_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/1783_Cytosol
+http://smpdb.ca/pathways/#Protein/19458_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19460_Cytosol
+http://smpdb.ca/pathways/#Protein/19454_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19461_Nucleus
+http://smpdb.ca/pathways/#Protein/19454_Nucleus,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19461_Nucleus
+http://smpdb.ca/pathways/#Protein/19454_Cytosol,abstraction:ControlsStateChangeOf,http://smpdb.ca/pathways/#Protein/19461_Cytosol
