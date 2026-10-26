@@ -13,7 +13,7 @@ PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?chemicalCatalyzer abstraction:ChemicalAffects ?protein .
+  ?chemicalCatalyzer abstraction:ChemicalAffects ?protLeft .
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .

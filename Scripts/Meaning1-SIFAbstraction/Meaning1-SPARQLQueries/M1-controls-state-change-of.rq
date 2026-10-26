@@ -13,7 +13,7 @@ PREFIX reactome: <http://www.reactome.org/biopax/95/48887#>
 PREFIX abstraction:<http://abstraction/#>
 
 CONSTRUCT {
-  ?enzyme abstraction:ControlsStateChangeOf ?prot
+  ?enzyme abstraction:ControlsStateChangeOf ?protLeft
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
@@ -23,8 +23,10 @@ WHERE {
   ?enzyme rdf:type bp3:Protein .
   ?reaction bp3:left ?protLeft .
   ?protLeft rdf:type bp3:Protein .
+  ?protLeft bp3:entityReference ?protRef .
   ?reaction bp3:right ?protRight .
   ?protRight rdf:type bp3:Protein .
   ?protRight bp3:feature ?feature .
+  ?protRight bp3:entityReference ?protRef .
   ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
 }
