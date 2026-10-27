@@ -32,7 +32,7 @@ WHERE {
 	?complex rdf:type/(rdfs:subClassOf*) bp3:Complex .
 	# Check for stoichiometry > 1
 	?complex bp3:componentStoichiometry ?stoich .
-	?stoich bp3:physicalEntity ?entity1 .
+	?stoich bp3:physicalEntity ?prot1 .
 	?stoich bp3:stoichiometricCoefficient ?coeff .
 	FILTER (?coeff > 1)
     ?complex bp3:component ?prot1 .
