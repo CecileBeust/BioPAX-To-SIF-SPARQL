@@ -20,9 +20,11 @@ WHERE {
   {
     VALUES ?NucleicAcid { bp3:Dna bp3:Rna }
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-    ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?left .
+    #?reaction bp3:left/(bp3:memberPhysicalEntity)* ?left .
+    ?reaction bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?left .
     ?left rdf:type ?NucleicAcid .
-    ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?product .
+    #?reaction bp3:right/(bp3:memberPhysicalEntity)* ?product .
+    ?reaction bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?product .
     ?product rdf:type bp3:Protein .
     ?product bp3:entityReference ?productRef .
     ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
@@ -37,7 +39,8 @@ WHERE {
   # Case where the reaction is a TemplateReaction
   {
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:TemplateReaction .
-    ?reaction bp3:product/(bp3:memberPhysicalEntity)* ?product .
+    #?reaction bp3:product/(bp3:memberPhysicalEntity)* ?product .
+    ?reaction bp3:product/((bp3:component|bp3:memberPhysicalEntity)*) ?product .
     ?product rdf:type bp3:Protein .
     ?product bp3:entityReference ?productRef .
     ?productRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .

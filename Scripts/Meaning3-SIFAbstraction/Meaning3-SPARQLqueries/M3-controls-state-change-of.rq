@@ -24,11 +24,13 @@ WHERE {
   ?enzyme bp3:entityReference ?enzymeRef .
   ?enzymeRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
-  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?protLeft .
+  #?reaction bp3:left/(bp3:memberPhysicalEntity)* ?protLeft .
+  ?reaction bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?protLeft .
   ?protLeft rdf:type bp3:Protein .
   ?protLeft bp3:entityReference ?protRef .
 
-  ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?protRight .
+  #?reaction bp3:right/(bp3:memberPhysicalEntity)* ?protRight .
+  ?reaction bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?protRight .
   ?protRight rdf:type bp3:Protein .
   ?protRight bp3:entityReference ?protRef .
   ?protRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
