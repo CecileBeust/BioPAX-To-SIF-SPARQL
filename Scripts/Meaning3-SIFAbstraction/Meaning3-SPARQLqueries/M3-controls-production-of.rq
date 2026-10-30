@@ -17,7 +17,7 @@ CONSTRUCT {
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?reactant .
+  ?reaction bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?reactant .
   ?reactant rdf:type bp3:SmallMolecule .
   ?reactant bp3:entityReference ?reactantRef .
   ?reactantRef rdf:type bp3:SmallMoleculeReference .
@@ -35,7 +35,7 @@ WHERE {
     "CHEBI:28931", "CHEBI:58307", "CHEBI:17877", "CHEBI:17552", "CHEBI:58189",
     "CHEBI:37565", "CHEBI:15996"))
   
-  ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?product .
+  ?reaction bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?product .
   ?product rdf:type bp3:SmallMolecule .
   ?product bp3:entityReference ?productRef .
   ?productRef rdf:type bp3:SmallMoleculeReference .

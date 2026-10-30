@@ -17,11 +17,9 @@ CONSTRUCT {
 }
 WHERE {
   ?MolecularInteraction rdf:type/(rdfs:subClassOf*) bp3:MolecularInteraction .
-  #?MolecularInteraction bp3:participant ?participant1 .
   ?relParticipant1 rdfs:subPropertyOf* bp3:participant .
   ?MolecularInteraction ?relParticipant1 ?participant1 .
   ?participant1 rdf:type bp3:Protein .
-  #?MolecularInteraction bp3:participant ?participant2 .
   ?relParticipant2 rdfs:subPropertyOf* bp3:participant .
   ?MolecularInteraction ?relParticipant2 ?participant2 .
   ?participant2 rdf:type bp3:Protein . 

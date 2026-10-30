@@ -16,12 +16,13 @@ CONSTRUCT {
   ?participant1Ref abstraction:InteractsWith ?participant2Ref
 }
 WHERE {
-  VALUES ?participantType { bp3:Protein bp3:SmallMolecule }
   ?MolecularInteraction rdf:type/(rdfs:subClassOf*) bp3:MolecularInteraction .
-  ?MolecularInteraction bp3:participant ?participant1 .
-  ?participant1 rdf:type ?participantType .
-  ?MolecularInteraction bp3:participant ?participant2 .
-  ?participant2 rdf:type ?participantType . 
+  ?relParticipant1 rdfs:subPropertyOf* bp3:participant .
+  ?MolecularInteraction ?relParticipant1 ?participant1 .
+  ?participant1 rdf:type bp3:Protein .
+  ?relParticipant2 rdfs:subPropertyOf* bp3:participant .
+  ?MolecularInteraction ?relParticipant2 ?participant2 .
+  ?participant2 rdf:type bp3:Protein . 
 
   ?participant1 bp3:entityReference ?participant1Ref .
   ?participant1Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .

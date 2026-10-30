@@ -17,8 +17,8 @@ CONSTRUCT {
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-  ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?smallMolecule1 .
-  ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?smallMolecule2 .
+  ?reaction bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?smallMolecule1 .
+  ?reaction bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?smallMolecule2 .
   ?smallMolecule1 rdf:type bp3:SmallMolecule .
   ?smallMolecule1 bp3:entityReference ?smallMolecule1Ref .
   ?smallMolecule1Ref rdf:type bp3:SmallMoleculeReference .

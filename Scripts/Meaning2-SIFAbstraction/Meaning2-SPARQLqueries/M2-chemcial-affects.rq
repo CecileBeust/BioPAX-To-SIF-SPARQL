@@ -28,7 +28,6 @@ WHERE {
     ?chemicalCatalyzer rdf:type bp3:SmallMolecule .
     ?chemicalCatalyzer bp3:entityReference ?chemicalCatalyzerRef .
     ?chemicalCatalyzerRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
-    #BIND(?proteinComponent AS ?protein1)
     BIND(?proteinComponent AS ?protein)
   }
   UNION
@@ -39,6 +38,9 @@ WHERE {
     ?protLeft rdf:type bp3:Protein .
     ?reaction bp3:right ?protRight .
     ?protRight rdf:type bp3:Protein .
+    ?protLeft bp3:entityReference ?protRef .
+    ?protRight bp3:entityReference ?protRef .
+    ?protRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
     ?catalysis bp3:controlled ?reaction .
     ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
@@ -50,10 +52,8 @@ WHERE {
     # modification of the protein
     ?protRight bp3:feature ?feature .
     ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
-    #BIND(?protLeft AS ?protein2)
     BIND(?protLeft AS ?protein)
   }
-  #BIND(COALESCE(?protein1, ?protein2) AS ?protein)
   ?protein bp3:entityReference ?proteinRef .
   ?proteinRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 }

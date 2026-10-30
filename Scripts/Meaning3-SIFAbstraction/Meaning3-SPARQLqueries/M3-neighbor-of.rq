@@ -18,13 +18,13 @@ CONSTRUCT {
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Interaction .
 
-  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?participant1 .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right|bp3:participant) ?participant1 .
   ?participant1 (bp3:component|bp3:memberPhysicalEntity)* ?participant1Prot .
   ?participant1Prot rdf:type bp3:Protein .
   ?participant1Prot bp3:entityReference ?participant1Ref .
   ?participant1Ref rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
-  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?participant2 .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right|bp3:participant) ?participant2 .
   ?participant2 (bp3:component|bp3:memberPhysicalEntity)* ?participant2Prot .
   ?participant2Prot rdf:type bp3:Protein .
   ?participant2Prot bp3:entityReference ?participant2Ref .

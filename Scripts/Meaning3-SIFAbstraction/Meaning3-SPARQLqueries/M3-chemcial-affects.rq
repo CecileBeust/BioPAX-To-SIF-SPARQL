@@ -40,16 +40,19 @@ WHERE {
     "CHEBI:43474", "CHEBI:35780", "CHEBI:18367", "CHEBI:26078", "CHEBI:77740",
     "CHEBI:28931", "CHEBI:58307", "CHEBI:17877", "CHEBI:17552", "CHEBI:58189",
     "CHEBI:37565", "CHEBI:15996"))
-    BIND(?proteinComponent AS ?protein1)
+    BIND(?proteinComponent AS ?protein)
   }
   UNION
   # the small molecule has an effect on the protein state by controlling a Conversion reaction
   {
     ?reaction rdf:type/(rdfs:subClassOf*) bp3:Conversion .
-    ?reaction bp3:left/(bp3:memberPhysicalEntity)* ?protLeft .
+    ?reaction bp3:left/((bp3:component|bp3:memberPhysicalEntity)*) ?protLeft .
     ?protLeft rdf:type bp3:Protein .
-    ?reaction bp3:right/(bp3:memberPhysicalEntity)* ?protRight .
+    ?reaction bp3:right/((bp3:component|bp3:memberPhysicalEntity)*) ?protRight .
     ?protRight rdf:type bp3:Protein .
+    ?protLeft bp3:entityReference ?protRef .
+    ?protRight bp3:entityReference ?protRef .
+    ?protRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 
     ?catalysis bp3:controlled ?reaction .
     ?catalysis rdf:type/(rdfs:subClassOf*) bp3:Control .
@@ -73,9 +76,8 @@ WHERE {
     # modification of the protein
     ?protRight bp3:feature ?feature .
     ?feature rdf:type/(rdfs:subClassOf*) bp3:EntityFeature .
-    BIND(?protLeft AS ?protein2)
+    BIND(?protLeft AS ?protein)
   }
-  BIND(COALESCE(?protein1, ?protein2) AS ?protein)
   ?protein bp3:entityReference ?proteinRef .
   ?proteinRef rdf:type/(rdfs:subClassOf*) bp3:EntityReference .
 }

@@ -17,9 +17,9 @@ CONSTRUCT {
 }
 WHERE {
   ?reaction rdf:type/(rdfs:subClassOf*) bp3:Interaction .
-  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?prot1 .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right|bp3:participant) ?prot1 .
   ?prot1 rdf:type bp3:Protein .
-  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right) ?prot2 .
+  ?reaction ((^bp3:controlled/bp3:controller)|bp3:left|bp3:right|bp3:participant) ?prot2 .
   ?prot2 rdf:type bp3:Protein .
   # Avoid self-pairing and duplicate pairs
   FILTER (STR(?prot1) < STR(?prot2))
